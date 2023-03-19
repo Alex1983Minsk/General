@@ -1,0 +1,12 @@
+html,
+body {
+    font-family: $font;
+    font-size: $font-14;
+
+    background: $color-white;
+    overflow-x: hidden;
+}
+
+.conteiner {
+    @include container();
+}
