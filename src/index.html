@@ -25,6 +25,100 @@
 </head>
 <body>
     <header class="header">
+        <div class="header-top">
+            <div class="header-top__block">
+                <ul class="header-top__block_region">
+                    <li class="header-top__block_region--list"><img src="./img/icons/point.png" alt="region"></li>
+                    <li class="header-top__block_region--list">Москва</li>
+                </ul>
+                <ul class="header-top__block_nav">
+                    <li class="header-top__block_nav--list"><a href="./pages/about.html">О компании</a></li>
+                    <li class="header-top__block_nav--list"><a href="./pages/delivery.html">Доставка</a></li>
+                    <li class="header-top__block_nav--list"><a href="./pages/payment.html">Оплата</a></li>
+                    <li class="header-top__block_nav--list"><a href="./pages/actions.html">Акции</a></li>
+                    <li class="header-top__block_nav--list"><a href="#">Распродажа</a></li>
+                    <li class="header-top__block_nav--list">Еще
+                        <select name="nav_menu" id="nav_menu" method="POST">
+                            <option value=""></option>
+                            <option value=""><a href="./pages/vacancy.html">Вакансии</a></option>
+                            <option value=""><a href="./pages/guarantee.html">Гарантии</a></option>
+                            <option value=""><a href="./pages/blog.html">Блог</a></option>
+                            <option value=""><a href="#">Для юр. лиц</a></option>
+                            <option value=""><a href="#">Отзывы</a></option>
+                            <option value=""><a href="./pages/contacts.html">Контакты</a></option>
+                        </select>
+                    </li>
+                </ul>
+                <ul class="header-top__block_contacts">
+                    <li class="header-top__block_contacts--list">
+                        <a href="#"><img src="./img/icons/telegram.png" alt="telegram"></a>
+                    </li>
+                    <li class="header-top__block_contacts--list">
+                        <a href="#"><img src="./img/icons/viber.png" alt="viber"></a>
+                    </li>
+                    <li class="header-top__block_contacts--list">
+                        <a href="#"><img src="./img/icons/whatsapp.png" alt="whatsapp"></a>
+                    </li>
+                    <li class="header-top__contacts_list">
+                        <a href="tel:+74952150744">+7 495 215 0744</a>
+                    </li>
+                </ul>
+                <ul class="header-top__block_mail">
+                    <li class="header-top__block_mail--list"><img src="./img/icons/mail.png" alt="mail"></li>
+                    <li class="header-top__block_mail--list">
+                        <a href="mailto:sales@tele-optics.ru">sales@tele-optics.ru</a>
+                    </li>
+                
+                </ul>
+                <ul class="header-top__block_user">
+                    <li class="header-top__block_user--list"><img src="./img/icons/user.png" alt="user"></li>
+                    <li class="header-top__block_user--list"><a href="#">Вход / Регистрация</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="header-bottom">
+            <div class="header-bottom__block">
+                <div class="header-bottom__block_logo">
+                    <img src="./img/icons/logo.png" class="header-bottom__block_logo--img logo_icon_centr" alt="logo">
+                    <img src="./img/icons/logo_round.png" class="header-bottom__block_logo--img logo_icon_round" alt="logo">
+                </div>
+                <div class="header-bottom__block_title">
+                    <h1 class="header-bottom__block_title--name"><span style="font-weight: bold;">Tele</span>-Optics</h1>
+                    <h3 class="header-bottom__block_title--description">МАГАЗИН ОПТИЧЕСКИХ ПРИБОРОВ</h3>
+                </div>
+                <div class="header-bottom__block_search">
+                    <input type="text" name="search" class="header-bottom__block_search--input" placeholder="Введите название: Бинокль армейский">
+                    <img src="./img/icons/search.png"  class="header-bottom__block_search--img search_icon" alt="search">
+                </div>
+                <ul class="header-bottom__block_function">
+                    <li class="header-bottom__block_function--list"><a href="#"><img src="./img/icons/eye.png" alt="view"><span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">0</span></a>
+                    </li>
+                    <li class="header-bottom__block_function--list"><a href="#"><img src="./img/icons/scales.png" alt="scales"><span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">0</span></a>
+                    </li>
+                    <li class="header-bottom__block_function--list"><a href="#"><img src="./img/icons/heart.png" alt="heart"><span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">6</span></a>
+                    </li>
+                    <li class="header-bottom__block_function--list"><a href="./pages/basket.html"><img src="./img/icons/basket.png" alt="basket"><span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">7</span></a>
+                        
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="header-nav">
+            <div class="header-nav__block">
+                <ul class="header-nav__block_lists">
+                    <li class="header-nav__block_lists--list"><a href="#">Телескопы</a></li>
+                    <li class="header-nav__block_lists--list"><a href="#">Бинокли</a></li>
+                    <li class="header-nav__block_lists--list"><a href="#">Лупы</a></li>
+                    <li class="header-nav__block_lists--list"><a href="#">Микроскопы</a></li>
+                    <li class="header-nav__block_lists--list"><a href="#">Зрительные трубы</a></li>
+                    <li class="header-nav__block_lists--list"><a href="#">Монокуляры</a></li>
+                    <li class="header-nav__block_lists--list"><a href="#">Прицелы</a></li>
+                    <li class="header-nav__block_lists--list"><a href="#">Дальномеры</a></li>
+                    <li class="header-nav__block_lists--list"><a href="#">Тепловизоры</a></li>
+                    <li class="header-nav__block_lists--list">Еще</li>
+                </ul>
+            </div>
+        </div>
 
     </header>
     <main class="main">

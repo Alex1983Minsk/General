@@ -1,0 +1,215 @@
+.header {
+    max-width: 1440px;
+    margin: 0 auto;
+
+    &-top {
+        background-color: $color-8-light-grey;
+        
+       
+        &__block {
+            @include flex();
+
+            max-width: 1280px;
+            margin: 0 auto;
+
+            font-size: $font-14;
+
+            &_region {
+                @include flex();
+               
+                &--list {
+                    margin: $m-0-3;
+                    padding: $p-0-3;
+
+                    &:hover {
+                        background-color: $color-dark-yellow;
+
+                        border-radius: 5px;
+
+                        margin: $m-0-3;
+                        padding: $p-0-3;
+                        
+                    }
+                }
+            }
+
+            &_nav {
+                @include flex();
+               
+                &--list{
+                    margin: $m-0-3;
+                    padding: $p-0-3;
+
+                    &:hover {
+                        background-color: $color-dark-yellow;
+                        border-radius: 5px;
+                        margin: $m-0-3;
+                        padding: $p-0-3;
+                    }
+                }
+            }
+
+            &_contacts {
+                @include flex();
+               
+                &--list {
+                    margin: $m-0-3;
+                    padding: $p-0-3;
+
+                }
+            }
+
+            &_mail {
+                @include flex();
+                
+                &--list {
+                    margin: $m-0-3;
+                    padding: $p-0-3;
+
+                    &:hover {
+                        background-color: $color-dark-yellow;
+                        border-radius: 5px;
+                        margin: $m-0-3;
+                        padding: $p-0-3;
+                    }
+                }
+            }
+
+            &_user {
+                @include flex();
+                
+                &--list {
+                    margin: $m-0-3;
+                    padding: $p-0-3;
+
+                    &:hover {
+                        background-color: $color-dark-yellow;
+                        border-radius: 5px;
+                        margin: $m-0-3;
+                        padding: $p-0-3;
+                    }
+                    
+                }
+            }
+        }
+
+    }
+
+    &-bottom {
+        height:90px;
+
+        &__block {
+            @include flex();
+
+            max-width: 1280px;
+            margin: 0 auto;
+
+            padding:$p-1;
+
+            &_logo {
+                             
+                
+            }
+
+            &_title {
+                margin-left:$m-0-3;
+                
+                &--name {
+                    font-size: $font-20;
+                    font-weight: $font-w-400;
+                }
+                &--description {
+                    font-size: $font-6;
+                    color:$color-3-dark-blue;
+                }
+                
+            }
+
+            &_search {
+                
+                &--input {
+                    width: 732px;
+                    height:48px;
+
+                    padding: $p-12px, $p-15px, $p-12px, $p-20px;
+                    border-radius: $p-5px;
+                    border: 1px solid $color-5-light-grey;
+
+                    background-color: $color-8-light-grey;
+                }
+                
+                &--img {
+
+                }
+            }
+
+            &_function {
+                @include flex();
+
+                &--list {
+                   margin:$m-1;
+
+                }
+            }
+        }
+    }
+    &-nav {
+        height:50px;
+        border: 2px solid $color-5-light-grey;
+
+        &__block {
+            max-width: 1280px;
+            margin: 0 auto;
+
+            font-size: $font-18;
+            font-weight: $font-w-500;
+
+            &_lists {
+                @include flex();
+                padding:$p-1;
+
+                &--list a {
+                    font-weight:$font-w-500;
+                    
+                    &:hover {
+                        color: $color-middle-blue;
+                        
+                        border-bottom: 4px solid $color-middle-blue;
+
+                        font-weight:$font-w-500;
+                    }
+                   
+                }
+            }
+        }
+    }
+    
+}
+
+//Making logo with two images
+.logo_icon_centr {
+    position: absolute;
+
+    left: 130px;
+    top: 73px;
+
+    z-index: 2;
+}
+
+.logo_icon_round {
+    position: absolute;
+
+    left: 127px;
+    top: 68px;
+
+    z-index: 1;
+}
+
+//Position of search image
+.search_icon {
+    position: absolute;
+    left: 1050px;
+    top: 85px;
+    
+}
+
