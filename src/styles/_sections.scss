@@ -1,0 +1,78 @@
+.section {
+    @include container();
+
+    &__container {
+        margin: 0 auto;
+
+        &_description {
+            font-size: $font-16;
+            font-weight: $font-w-400;
+        }
+       
+        &_top {
+            @include flex();
+            margin: $m-1 0;
+            
+            &--title {
+                font-weight: $font-w-700;
+                font-size: $font-32;
+               
+            }
+
+            &--link {
+                @include flex();
+
+                font-weight: $font-w-500;
+                font-size: $font-16;
+                margin: $m-1;
+                text-align: right;
+
+                .title_link {
+                    margin: $m-0-5;
+                }
+            }
+        }
+
+        &_products {
+            
+            &--card {
+                @include flex();
+               
+            
+            }
+        }
+
+        &_brends {
+            @include flex();
+                        
+            
+            
+        }
+        &_icons {
+            @include flex();
+                        
+                
+            
+        }
+    }
+
+    
+}
+
+.section4 {
+    height:286px;
+    background-color: $color-white;
+    
+}
+
+.section6 {
+    height:218px;
+    background-color: $color-white;
+    
+}
+
+.section8 {
+    height:520px;
+    background-color: $color-white;
+}
+

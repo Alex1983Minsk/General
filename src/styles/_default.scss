@@ -11,4 +11,16 @@ body {
     @include container();
 }
 
+.stars {
+    @include flex();
+
+    
+}
+
+.no_flex {
+    clear: left;
+}
+
+
+
 

@@ -1,6 +1,5 @@
 .header {
-    max-width: 1440px;
-    margin: 0 auto;
+    @include container();
 
     &-top {
         background-color: $color-8-light-grey;
@@ -22,13 +21,24 @@
                     padding: $p-0-3;
 
                     &:hover {
+                        @include transition();
+
                         background-color: $color-dark-yellow;
 
                         border-radius: 5px;
 
                         margin: $m-0-3;
                         padding: $p-0-3;
+                        cursor: pointer;
                         
+                    }
+
+                    .point_icon {
+
+                        &:hover {
+                            @include transition();
+                            transform: translateY(-5px);
+                        }
                     }
                 }
             }
@@ -41,6 +51,8 @@
                     padding: $p-0-3;
 
                     &:hover {
+                        @include transition();
+
                         background-color: $color-dark-yellow;
                         border-radius: 5px;
                         margin: $m-0-3;
@@ -56,6 +68,15 @@
                     margin: $m-0-3;
                     padding: $p-0-3;
 
+                    .header_social {
+
+                        &:hover {
+                            @include transition();
+
+                            transform: translateY(-5px);
+                        }
+                    }
+
                 }
             }
 
@@ -67,6 +88,8 @@
                     padding: $p-0-3;
 
                     &:hover {
+                        @include transition();
+
                         background-color: $color-dark-yellow;
                         border-radius: 5px;
                         margin: $m-0-3;
@@ -83,6 +106,8 @@
                     padding: $p-0-3;
 
                     &:hover {
+                        @include transition();
+
                         background-color: $color-dark-yellow;
                         border-radius: 5px;
                         margin: $m-0-3;
@@ -107,13 +132,19 @@
             padding:$p-1;
 
             &_logo {
-                             
                 
+                .logo_icon_centr {
+    
+                    background-image: url('../img/icons/logo_round.png');
+                    background-repeat: no-repeat;
+                    padding: $p-0-3;
+                                 
+                }
             }
 
             &_title {
-                margin-left:$m-0-3;
-                
+                margin-left: -50px;
+                                
                 &--name {
                     font-size: $font-20;
                     font-weight: $font-w-400;
@@ -137,10 +168,13 @@
 
                     background-color: $color-8-light-grey;
                 }
-                
-                &--img {
 
+                .search_icon {
+                   margin-left: -30px;
+                                                     
                 }
+                
+               
             }
 
             &_function {
@@ -148,6 +182,15 @@
 
                 &--list {
                    margin:$m-1;
+
+                   .func_icon {
+
+                        &:hover {
+                            @include transition();
+                            transform: translateY(-5px);
+                        }
+
+                   }
 
                 }
             }
@@ -186,30 +229,8 @@
     
 }
 
-//Making logo with two images
-.logo_icon_centr {
-    position: absolute;
 
-    left: 130px;
-    top: 73px;
 
-    z-index: 2;
-}
 
-.logo_icon_round {
-    position: absolute;
 
-    left: 127px;
-    top: 68px;
-
-    z-index: 1;
-}
-
-//Position of search image
-.search_icon {
-    position: absolute;
-    left: 1050px;
-    top: 85px;
-    
-}
 

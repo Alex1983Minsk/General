@@ -1,0 +1,35 @@
+.btn_news,
+.btn_price {
+    justify-content: center;
+    align-items: center;
+    padding: 11px 15px;
+
+    border-radius: 5px;
+
+    color: $color-middle-blue;
+
+    background-color: $color-white;
+    
+    font-size: $font-14;
+    font-weight: $font-w-500;
+
+    border: 1px solid $color-white;
+
+    width:200px;
+
+    box-shadow: 0px 5px 20px rgba(63, 66, 69, 0.05);
+
+    &:hover {
+        @include transition();
+
+        border: 1px solid $color-white;
+
+        background: linear-gradient(0deg, #F1DA09, #F1DA09), linear-gradient(0deg, #EEEE36, #EEEE36), #0867D6;
+
+        cursor: pointer;
+
+        transform: translateY(-2px);
+    }
+
+}
+
