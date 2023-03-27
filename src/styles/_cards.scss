@@ -1,94 +1,229 @@
 //Card of popular categories section
-.card_popular {
-    width: calc(100%/5);
-    border: 1px solid $color-5-light-grey;
-    align-items: center;
-    padding: 25px 20px;
+.card {
+    @include flex();
+    margin-top:$m-4;
+       
+    &__popular {
+        width: calc(100%/5);
+        border: 1px solid $color-5-light-grey;
+        align-items: center;
+        padding: 25px 20px;
 
-    &:hover {
-        box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-    }
+        &:hover {
+            @include transition();
 
-    .product_img {
-            margin: $m-0-5;
-            
-               
-        .img_product {
-            display: block;
-            margin:0 auto;
-            left:50%;
+            box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
         }
-    }
-    .product_description {
 
-        .product_title {
-            display:block;
-            text-align:center;
+        &_img {
+            margin: $m-0-5;
 
-            font-weight: $font-w-700;
-            font-size: $font-18;
+            &--image {
+                display: block;
+                margin:0 auto;
+                left:50%;
 
-            margin:$m-1;
+            }
+        }
+        
+        &_description {
 
-            &:hover {
-                color:$color-middle-blue;
+            &--title {
+                display:block;
+                text-align:center;
+
+                font-weight: $font-w-700;
+                font-size: $font-18;
+
+                margin:$m-1;
+
+                &:hover {
+                    @include transition();
+                    color:$color-middle-blue;
+                }
+            }
+
+            &--count {
+                text-align:center;
+
+                font-weight: $font-w-400;
+                font-size: $font-14;
+            
+                color: $color-4-light-grey;
             }
 
         }
-        .product_count {
-            text-align:center;
 
-            font-weight: $font-w-400;
-            font-size: $font-14;
+    }
+
+    &__brend {
+        background-color: $color-8-light-grey;
+        border: 1px solid $color-5-light-grey;
+        border-radius: 10px;
+
+        width:180px;
+        height: 100px;
+
+        padding: $p-27px $p-30px;
+
+        &:hover {
+            background-color: $color-white;
             
-            color: $color-4-light-grey;
+            box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
         }
+
     }
-}
-//Card of Brend section
-.card_brend {
-    background-color: $color-8-light-grey;
-    border: 1px solid $color-5-light-grey;
-    border-radius: 10px;
 
-    width:180px;
-    height: 100px;
+    &__icon {
+        @include flex();
 
-    padding: $p-27px $p-30px;
+        width: 270px;
+        height: 98px;
     
-    &:hover {
-        background-color: $color-white;
+        padding: 25px 30px;
+           
+        background-color: $color-7-light-grey;
+        border-radius: 5px;
+       
+    
+        &:hover {
+            @include transition();
+            box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+            cursor: pointer;
+        }
+
+
+        &_title {
+            font-weight: $font-w-500;
+            font-size: $font-18;
+            color: $color-light-grey;
+
+        }
+     
+    }
+
+    &__goods {
+        @include flex();
+
+        width: 376px;
+        height: 325px;
+        box-shadow: 0px 5px 20px rgba(63, 66, 69, 0.05);
+        border-radius: 5px;
+
+        background: $color-white;
         
+        margin: $m-1 $m-2 $m-1 $m-2;
+       
+        //width: calc(100%/3);
+        
+        &_img {
+           height: 70px;
+           width: 70px;
+           border-radius: 10px;
+           margin-left: $m-2;
+           margin-bottom:$m-10;
+           
+        }
+
+        &_lists {
+            margin-right: $m-2;
+
+            &--list {
+                padding:$p-0-5;
+
+                & a:hover {
+                    @include transition();
+                    color: $color-middle-blue;
+                }
+            }
             
-        box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+            
+        }
+
     }
+
+    &__hits {
+        display: block;
+        float: left;
+        width: calc(100%/4);
+        height: 410px;
+        margin: $m-1;
+        background: $color-white;
+        margin: $m-1;
+        margin: 0 auto;
+
+
+        &_check {
+            margin: $m-1;
+
+        }
+        
+        &_img {
+            text-align: center;
+
+        }
+
+        &_title {
+            font-weight: $font-w-500;
+            font-size: $font-16;
+            margin: $m-0-5;
+            text-align: center;
+        }
+
+        &_stars {
+            margin: $m-0-5;
+            text-align: center;
+
+        }
+
+        &_price {
+            font-size: $font-24;
+            font-weight: $font-w-700;
+            margin: $m-0-5;
+            text-align: center;
+
+        }
+
+        
+    }
+
+    &__counters {
+        @include flex();
+       
+        &_title {
+            margin: $m-1;
+            color: $color-5-light-grey;
+
+            font-size: $font-20;
+            font-weight: $font-w-500;
+
+            & a:hover {
+                @include transition();
+
+                color: $color-middle-blue;
+            }
+
+        }
+        &_img {
+            margin: $m-1;
+        }
+        
+        &_counter {
+            margin: $m-1;
+            padding-top:$p-0-5;
+        }
+
+        &_devider {
+            color: $color-5-light-grey;
+            margin: $m-2;
+        }
+        
+
+
+    }
+
+
 }
-//Card of Icons block
-.card_icon {
-    @include flex();
 
-    width: 270px;
-    height: 98px;
 
-    padding: 25px 30px;
-
-    background-color: $color-7-light-grey;
-    border-radius: 5px;
-
-    &:hover {
-        box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-        cursor: pointer;
-    }
-
-    .title_icon {
-        font-weight: $font-w-500;
-        font-size: $font-18;
-        color: $color-light-grey;
-    }
-
-    .icon_img {
-
-    }
-
-}
 

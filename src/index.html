@@ -18,11 +18,12 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> 
     <!-- Swiper -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
-
+    
     <!--main.css-->
     <link rel="stylesheet" href="./styles/main.css">
     
 </head>
+
 <body>
     <header class="header">
         <div class="header-top">
@@ -37,16 +38,18 @@
                     <li class="header-top__block_nav--list"><a href="./pages/payment.html">Оплата</a></li>
                     <li class="header-top__block_nav--list"><a href="./pages/actions.html">Акции</a></li>
                     <li class="header-top__block_nav--list"><a href="#">Распродажа</a></li>
-                    <li class="header-top__block_nav--list">Еще
-                        <select name="nav_menu" id="nav_menu" method="POST">
-                            <option value=""></option>
-                            <option value=""><a href="./pages/vacancy.html">Вакансии</a></option>
-                            <option value=""><a href="./pages/guarantee.html">Гарантии</a></option>
-                            <option value=""><a href="./pages/blog.html">Блог</a></option>
-                            <option value=""><a href="#">Для юр. лиц</a></option>
-                            <option value=""><a href="#">Отзывы</a></option>
-                            <option value=""><a href="./pages/contacts.html">Контакты</a></option>
-                        </select>
+                    <li class="header-top__block_nav--list">
+                        <div class="dropdown">
+                            <button onclick="myFunction()" class="dropbtn">Еще</button>
+                            <div id="myDropdown" class="dropdown-content">
+                                <a href="./pages/vacancy.html">Вакансии</a>
+                                <a href="./pages/guarantee.html">Гарантии</a>
+                                <a href="./pages/blog.html">Блог</a>
+                                <a href="#">Для юр. лиц</a>
+                                <a href="#">Отзывы</a>
+                                <a href="./pages/contacts.html">Контакты</a>
+                            </div>
+                        </div>  
                     </li>
                 </ul>
                 <ul class="header-top__block_contacts">
@@ -124,186 +127,726 @@
         <!-- Sliders -->
         <section class="section section1">
             <div class="section__container">
-                <div class="section__container_top">
-                    <h1 class="section__container_top--title">Популярные категории</h1>
-                    <div class="section__container_top--link">
-                        <h3 class="title_link">Перейти в каталог</h3>
-                        <a href="./pages/catalog.html"><img src="./img/icons/link_icon.png" alt="link" class="link"></a>
+                <div class="section__container_swiper  slider-top">
+                    <!-- Slider main container -->
+                    <div class="swiper slider-top__area">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper slider-top__area_slides">
+                            <!-- Slides -->
+                            <div class="swiper-slide slider-top__area_slides--slide">
+                                <button class="btn_more"><a href="#">Подробнее</a></button>
+                            </div>
+                            <div class="swiper-slide slider-top__area_slides--slide">
+                                <button class="btn_more"><a href="#">Подробнее</a></button>
+                            </div>
+                            <div class="swiper-slide slider-top__area_slides--slide">
+                                <button class="btn_more"><a href="#">Подробнее</a></button>
+                            </div>
+                            <div class="swiper-slide slider-top__area_slides--slide">
+                                <button class="btn_more"><a href="#">Подробнее</a></button>
+                            </div>
+                        </div>
+                        <!-- If we need pagination -->
+                        <div class="swiper-pagination"></div>
+  
+                        <!-- If we need navigation buttons -->
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+  
+                        <!-- If we need scrollbar -->
+                        <div class="swiper-scrollbar"></div>
                     </div>
                 </div>
-                <div class="section__container_products">
-                    <div class="section__container_products--card">
-                        <div class="card_popular">
-                            <div class="product_img">
-                                <a href="#"><img src="./img/goods/goods_binokl.png" alt="binokles" class="img_product"></a>
-                            </div>
-                            <div class="product_description">
-                                <a href="#" class="product_title">Бинокли</a>
-                                <p class="product_count">35 товаров</p>
-                            </div>
-                        </div>
-                        <div class="card_popular">
-                            <div class="product_img">
-                                <a href="#"><img src="./img/goods/goods_telescope.png" alt="telecsopes" class="img_product"></a>
-                            </div>
-                            <div class="product_description">
-                                <a href="#" class="product_title">Телескопы</a>
-                                <p class="product_count">35 товаров</p>
-                            </div>
-                        </div>
-
-                        <div class="card_popular">
-                            <div class="product_img">
-                                <a href="#"><img src="./img/goods/goods_dalnomer.png" alt="dalnomers" class="img_product"></a>
-                            </div>
-                            <div class="product_description">
-                                <a href="#" class="product_title">Дальномеры</a>
-                                <p class="product_count">35 товаров</p>
-                            </div>
-                        </div>
-
-                        <div class="card_popular">
-                            <div class="product_img">
-                                <a href="#"><img src="./img/goods/goods_wachtube.png" alt="wach_tubes" class="img_product"></a>
-                            </div>
-                            <div class="product_description">
-                                <a href="#" class="product_title">Зрительные трубы</a>
-                                <p class="product_count">35 товаров</p>
-                            </div>
-                        </div>
-
-                        <div class="card_popular">
-                            <div class="product_img">
-                                <a href="#"><img src="./img/goods/goods_pricel.png" alt="pricels" class="img_product"></a>
-                            </div>
-                            <div class="product_description">
-                                <a href="#" class="product_title">Прицелы</a>
-                                <p class="product_count">35 товаров</p>
-                            </div>
-                        </div>
-
-                        <div class="card_popular">
-                            <div class="product_img">
-                                <a href="#"><img src="./img/goods/goods_lupa.png" alt="lups" class="img_product"></a>
-                            </div>
-                            <div class="product_description">
-                                <a href="#" class="product_title">Лупы</a>
-                                <p class="product_count">35 товаров</p>
-                            </div>
-                        </div>
-
-                        <div class="card_popular">
-                            <div class="product_img">
-                                <a href="#"><img src="./img/goods/goods_monocular.png" alt="monokulars" class="img_product"></a>
-                            </div>
-                            <div class="product_description">
-                                <a href="#" class="product_title">Монокуляры</a>
-                                <p class="product_count">35 товаров</p>
-                            </div>
-                        </div>
-
-                        <div class="card_popular">
-                            <div class="product_img">
-                                <a href="#"><img src="./img/goods/goods_microscope.png" alt="microscopes" class="img_product"></a>
-                            </div>
-                            <div class="product_description">
-                                <a href="#" class="product_title">Микроскопы</a>
-                                <p class="product_count">35 товаров</p>
-                            </div>
-                        </div>
-
-                        <div class="card_popular">
-                            <div class="product_img">
-                                <a href="#"><img src="./img/goods/goods_teplovisor.png" alt="teplovizors" class="img_product"></a>
-                            </div>
-                            <div class="product_description">
-                                <a href="#" class="product_title">Тепловизоры</a>
-                                <p class="product_count">35 товаров</p>
-                            </div>
-                        </div>
-
-                        <div class="card_popular">
-                            <div class="product_img">
-                                <a href="#"><img src="./img/goods/goods_digital_camera.png" alt="cameras" class="img_product"></a>
-                            </div>
-                            <div class="product_description">
-                                <a href="#" class="product_title">Цифровые камеры</a>
-                                <p class="product_count">35 товаров</p>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-
             </div>
         </section>
         <!-- Popular -->
         <section class="section section2">
-            
+            <div class="section__container">
+                <div class="section__container_top">
+                    <h1 class="section__container_top--title">Популярные категории</h1>
+                    <div class="section__container_top--link">
+                        <h3 class="title_link"><a href="#">Перейти в каталог</a></h3>
+                        <a href="./pages/catalog.html"><img src="./img/icons/link_icon.png" alt="link"></a>
+                    </div>
+                </div>
+                <ul class="section__container_lists">
+                    <li class="section__container_lists--list card__popular">
+                        <div class="card__popular_img">
+                            <a href="#"><img src="./img/goods/goods_binokl.png" alt="binokles" class="card__popular_img--image"></a>
+                        </div>
+                        <div class="card__popular_description">
+                            <a href="#" class="card__popular_description--title">Бинокли</a>
+                            <p class="card__popular_description--count">35 товаров</p>
+                        </div>
+                    </li>
+                    <li class="section__container_lists--list card__popular">
+                        <div class="card__popular_img">
+                            <a href="#"><img src="./img/goods/goods_telescope.png" alt="telecsopes" class="card__popular_img--image"></a>
+                            </div>
+                        <div class="card__popular_description">
+                            <a href="#" class="card__popular_description--title">Телескопы</a>
+                            <p class="card__popular_description--count">35 товаров</p>
+                        </div>
+                    </li>
+                    <li class="section__container_lists--list card__popular">
+                        <div class="card__popular_img">
+                            <a href="#"><img src="./img/goods/goods_dalnomer.png" alt="dalnomers" class="card__popular_img--image"></a>
+                        </div>
+                        <div class="card__popular_description">
+                            <a href="#" class="card__popular_description--title">Дальномеры</a>
+                            <p class="card__popular_description--count">35 товаров</p>
+                        </div>
+                    </li>
+                    <li class="section__container_lists--list card__popular">
+                        <div class="card__popular_img">
+                            <a href="#"><img src="./img/goods/goods_wachtube.png" alt="wach_tubes" class="card__popular_img--image"></a>
+                        </div>
+                        <div class="card__popular_description">
+                            <a href="#" class="card__popular_description--title">Зрительные трубы</a>
+                            <p class="card__popular_description--count">35 товаров</p>
+                        </div>
+                    </li>
+                    <li class="section__container_lists--list card__popular">
+                        <div class="card__popular_img">
+                            <a href="#"><img src="./img/goods/goods_pricel.png" alt="pricels" class="card__popular_img--image"></a>
+                        </div>
+                        <div class="card__popular_description">
+                                <a href="#" class="card__popular_description--title">Прицелы</a>
+                                <p class="card__popular_description--count">35 товаров</p>
+                        </div>
+                    </li>
+                    <li class="section__container_lists--list card__popular">
+                        <div class="card__popular_img">
+                            <a href="#"><img src="./img/goods/goods_lupa.png" alt="lups" class="card__popular_img--image"></a>
+                        </div>
+                        <div class="card__popular_description">
+                            <a href="#" class="card__popular_description--title">Лупы</a>
+                            <p class="card__popular_description--count">35 товаров</p>
+                        </div>
+                    </li>
+                    <li class="section__container_lists--list card__popular">
+                        <div class="card__popular_img">
+                            <a href="#"><img src="./img/goods/goods_monocular.png" alt="monokulars" class="card__popular_img--image"></a>
+                        </div>
+                        <div class="card__popular_description">
+                            <a href="#" class="card__popular_description--title">Монокуляры</a>
+                            <p class="card__popular_description--count">35 товаров</p>
+                        </div>
+                    </li>
+                    <li class="section__container_lists--list card__popular">
+                        <div class="card__popular_img">
+                            <a href="#"><img src="./img/goods/goods_microscope.png" alt="microscopes" class="card__popular_img--image"></a>
+                        </div>
+                        <div class="card__popular_description">
+                            <a href="#" class="card__popular_description--title">Микроскопы</a>
+                            <p class="card__popular_description--count">35 товаров</p>
+                        </div>
+                    </li>
+                    <li class="section__container_lists--list card__popular">
+                        <div class="card__popular_img">
+                            <a href="#"><img src="./img/goods/goods_teplovisor.png" alt="teplovizors" class="card__popular_img--image"></a>
+                        </div>
+                        <div class="card__popular_description">
+                            <a href="#" class="card__popular_description--title">Тепловизоры</a>
+                            <p class="card__popular_description--count">35 товаров</p>
+                        </div>
+                    </li>
+                    <li class="section__container_lists--list card__popular">
+                        <div class="card__popular_img">
+                            <a href="#"><img src="./img/goods/goods_digital_camera.png" alt="cameras" class="card__popular_img--image"></a>
+                        </div>
+                        <div class="card__popular_description">
+                            <a href="#" class="card__popular_description--title">Цифровые камеры</a>
+                            <p class="card__popular_description--count">35 товаров</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
         </section>
         <!-- Hits -->
         <section class="section section3">
-            
+            <div class="section__container">
+                <div class="section__container_top">
+                    <div class="section__container_top--title">Хиты продаж</div>
+                    <div class="section__container_top--link">
+                        <h3 class="title_link"><a href="#">Смотреть весь каталог</a></h3>
+                        <a href="#"><img src="./img/icons/link_icon.png" alt="link" class="link"></a>
+                    </div>
+                </div>    
+                <div class="section__container_swiper">
+               <!-- Slider main container -->
+                <div class="swiper">
+                <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                    <!-- Slides -->
+                        <div class="swiper-slide">
+                            <ul class="card__hits">
+                                <li class="card__hits_check"><img src="./img/icons/check.png" alt="check">&nbsp;В наличии</li>
+                                <li class="card__hits_img"><a href="#"><img src="./img/goods/hits_binokl1.png" alt="binokl_hits"></a></li>
+                                <li class="card__hits_title">Бинокль БПЦ2 10х40 (обрезин.,<br>рубин)</li>
+                                <li class="card__hits_stars">
+                                    <img src="./img/icons/Star.png" alt="star">
+                                    <img src="./img/icons/Star.png" alt="star">
+                                    <img src="./img/icons/Star.png" alt="star">
+                                    <img src="./img/icons/Star.png" alt="star">
+                                    <img src="./img/icons/Star_grey.png" alt="star">
+                                    4.67 (12 отзывов)
+                                </li>
+                                <li class="card__hits_price">10 190 &#8381<span class="old_price">12 450 &#8381</span><button class="btn_basket"><a href="#"><img src="./img/icons/basket_btn.png" alt="basket"></a></button></li>
+                            </ul>
+                            <ul class="card__hits">
+                                <li class="card__hits_check"><img src="./img/icons/check.png" alt="check">&nbsp;В наличии</li>
+                                <li class="card__hits_img"><a href="#"><img src="./img/goods/hits_binokl2.png" alt="binokl_hits"></a></li>
+                                <li class="card__hits_title">Бинокль Veber БПЦ Zoom<br>8-32х50</li>
+                                <li class="card__hits_stars">
+                                    <img src="./img/icons/Star.png" alt="star">
+                                    <img src="./img/icons/Star.png" alt="star">
+                                    <img src="./img/icons/Star.png" alt="star">
+                                    <img src="./img/icons/Star.png" alt="star">
+                                    <img src="./img/icons/Star_grey.png" alt="star">
+                                    4.67 (12 отзывов)
+                                </li>
+                                <li class="card__hits_price">7 990 &#8381<span class="old_price">8 450 &#8381</span><button class="btn_basket"><a href="#"><img src="./img/icons/basket_btn.png" alt="basket"></a></button></li>
+                            </ul>
+                            <ul class="card__hits">
+                                <li class="card__hits_check"><img src="./img/icons/check.png" alt="check">&nbsp;В наличии</li>
+                                <li class="card__hits_img"><a href="#"><img src="./img/goods/hits_bag.png" alt="binokl_hits"></a></li>
+                                <li class="card__hits_title">Бинокль БПЦ2 10х40 (обрезин.,<br>рубин)</li>
+                                <li class="card__hits_stars">
+                                    <img src="./img/icons/Star.png" alt="star">
+                                    <img src="./img/icons/Star.png" alt="star">
+                                    <img src="./img/icons/Star.png" alt="star">
+                                    <img src="./img/icons/Star.png" alt="star">
+                                    <img src="./img/icons/Star_grey.png" alt="star">
+                                    4.67 (12 отзывов)
+                                </li>
+                                <li class="card__hits_price">5 190 &#8381<span class="old_price">6 550 &#8381</span><button class="btn_basket"><a href="#"><img src="./img/icons/basket_btn.png" alt="basket"></a></button></li>
+                            </ul>
+                            <ul class="card__hits">
+                                <li class="card__hits_check"><img src="./img/icons/check.png" alt="check">&nbsp;В наличии</li>
+                                <li class="card__hits_img"><a href="#"><img src="./img/goods/hits_binokl3.png" alt="binokl_hits"></a></li>
+                                <li class="card__hits_title">Бинокль БПЦ2 10х40 (обрезин.,<br>рубин)</li>
+                                <li class="card__hits_stars">
+                                    <img src="./img/icons/Star.png" alt="star">
+                                    <img src="./img/icons/Star.png" alt="star">
+                                    <img src="./img/icons/Star.png" alt="star">
+                                    <img src="./img/icons/Star.png" alt="star">
+                                    <img src="./img/icons/Star_grey.png" alt="star">
+                                    4.67 (12 отзывов)
+                                </li>
+                                <li class="card__hits_price">12 190 &#8381<span class="old_price">13 450 &#8381</span><button class="btn_basket"><a href="#"><img src="./img/icons/basket_btn.png" alt="basket"></a></button></li>
+                            </ul>
+                        </div>
+                        <div class="swiper-slide">
+                            <ul class="card__hits">
+                                <li class="card__hits_check"><img src="./img/icons/check.png" alt="check">&nbsp;В наличии</li>
+                                <li class="card__hits_img"><a href="#"><img src="./img/goods/hits_binokl1.png" alt="binokl_hits"></a></li>
+                                <li class="card__hits_title">Бинокль БПЦ2 10х40 (обрезин.,<br>рубин)</li>
+                                <li class="card__hits_stars">
+                                    <img src="./img/icons/Star.png" alt="star">
+                                    <img src="./img/icons/Star.png" alt="star">
+                                    <img src="./img/icons/Star.png" alt="star">
+                                    <img src="./img/icons/Star.png" alt="star">
+                                    <img src="./img/icons/Star_grey.png" alt="star">
+                                    4.67 (12 отзывов)
+                                </li>
+                                <li class="card__hits_price">10 190 &#8381<span class="old_price">12 450 &#8381</span><button class="btn_basket"><a href="#"><img src="./img/icons/basket_btn.png" alt="basket"></a></button></li>
+                            </ul>
+                            <ul class="card__hits">
+                                <li class="card__hits_check"><img src="./img/icons/check.png" alt="check">&nbsp;В наличии</li>
+                                <li class="card__hits_img"><a href="#"><img src="./img/goods/hits_binokl2.png" alt="binokl_hits"></a></li>
+                                <li class="card__hits_title">Бинокль Veber БПЦ Zoom<br>8-32х50</li>
+                                <li class="card__hits_stars">
+                                    <img src="./img/icons/Star.png" alt="star">
+                                    <img src="./img/icons/Star.png" alt="star">
+                                    <img src="./img/icons/Star.png" alt="star">
+                                    <img src="./img/icons/Star.png" alt="star">
+                                    <img src="./img/icons/Star_grey.png" alt="star">
+                                    4.67 (12 отзывов)
+                                </li>
+                                <li class="card__hits_price">7 990 &#8381<span class="old_price">8 450 &#8381</span><button class="btn_basket"><a href="#"><img src="./img/icons/basket_btn.png" alt="basket"></a></button></li>
+                            </ul>
+                            <ul class="card__hits">
+                                <li class="card__hits_check"><img src="./img/icons/check.png" alt="check">&nbsp;В наличии</li>
+                                <li class="card__hits_img"><a href="#"><img src="./img/goods/hits_bag.png" alt="binokl_hits"></a></li>
+                                <li class="card__hits_title">Бинокль БПЦ2 10х40 (обрезин.,<br>рубин)</li>
+                                <li class="card__hits_stars">
+                                    <img src="./img/icons/Star.png" alt="star">
+                                    <img src="./img/icons/Star.png" alt="star">
+                                    <img src="./img/icons/Star.png" alt="star">
+                                    <img src="./img/icons/Star.png" alt="star">
+                                    <img src="./img/icons/Star_grey.png" alt="star">
+                                    4.67 (12 отзывов)
+                                </li>
+                                <li class="card__hits_price">5 190 &#8381<span class="old_price">6 550 &#8381</span><button class="btn_basket"><a href="#"><img src="./img/icons/basket_btn.png" alt="basket"></a></button></li>
+                            </ul>
+                            <ul class="card__hits">
+                                <li class="card__hits_check"><img src="./img/icons/check.png" alt="check">&nbsp;В наличии</li>
+                                <li class="card__hits_img"><a href="#"><img src="./img/goods/hits_binokl3.png" alt="binokl_hits"></a></li>
+                                <li class="card__hits_title">Бинокль БПЦ2 10х40 (обрезин.,<br>рубин)</li>
+                                <li class="card__hits_stars">
+                                    <img src="./img/icons/Star.png" alt="star">
+                                    <img src="./img/icons/Star.png" alt="star">
+                                    <img src="./img/icons/Star.png" alt="star">
+                                    <img src="./img/icons/Star.png" alt="star">
+                                    <img src="./img/icons/Star_grey.png" alt="star">
+                                    4.67 (12 отзывов)
+                                </li>
+                                <li class="card__hits_price">12 190 &#8381<span class="old_price">13 450 &#8381</span><button class="btn_basket"><a href="#"><img src="./img/icons/basket_btn.png" alt="basket"></a></button></li>
+                            </ul>
+                        </div>
+                        <div class="swiper-slide">
+                            <ul class="card__hits">
+                                <li class="card__hits_check"><img src="./img/icons/check.png" alt="check">&nbsp;В наличии</li>
+                                <li class="card__hits_img"><a href="#"><img src="./img/goods/hits_binokl1.png" alt="binokl_hits"></a></li>
+                                <li class="card__hits_title">Бинокль БПЦ2 10х40 (обрезин.,<br>рубин)</li>
+                                <li class="card__hits_stars">
+                                    <img src="./img/icons/Star.png" alt="star">
+                                    <img src="./img/icons/Star.png" alt="star">
+                                    <img src="./img/icons/Star.png" alt="star">
+                                    <img src="./img/icons/Star.png" alt="star">
+                                    <img src="./img/icons/Star_grey.png" alt="star">
+                                    4.67 (12 отзывов)
+                                </li>
+                                <li class="card__hits_price">10 190 &#8381<span class="old_price">12 450 &#8381</span><button class="btn_basket"><a href="#"><img src="./img/icons/basket_btn.png" alt="basket"></a></button></li>
+                            </ul>
+                            <ul class="card__hits">
+                                <li class="card__hits_check"><img src="./img/icons/check.png" alt="check">&nbsp;В наличии</li>
+                                <li class="card__hits_img"><a href="#"><img src="./img/goods/hits_binokl2.png" alt="binokl_hits"></a></li>
+                                <li class="card__hits_title">Бинокль Veber БПЦ Zoom<br>8-32х50</li>
+                                <li class="card__hits_stars">
+                                    <img src="./img/icons/Star.png" alt="star">
+                                    <img src="./img/icons/Star.png" alt="star">
+                                    <img src="./img/icons/Star.png" alt="star">
+                                    <img src="./img/icons/Star.png" alt="star">
+                                    <img src="./img/icons/Star_grey.png" alt="star">
+                                    4.67 (12 отзывов)
+                                </li>
+                                <li class="card__hits_price">7 990 &#8381<span class="old_price">8 450 &#8381</span><button class="btn_basket"><a href="#"><img src="./img/icons/basket_btn.png" alt="basket"></a></button></li>
+                            </ul>
+                            <ul class="card__hits">
+                                <li class="card__hits_check"><img src="./img/icons/check.png" alt="check">&nbsp;В наличии</li>
+                                <li class="card__hits_img"><a href="#"><img src="./img/goods/hits_bag.png" alt="binokl_hits"></a></li>
+                                <li class="card__hits_title">Бинокль БПЦ2 10х40 (обрезин.,<br>рубин)</li>
+                                <li class="card__hits_stars">
+                                    <img src="./img/icons/Star.png" alt="star">
+                                    <img src="./img/icons/Star.png" alt="star">
+                                    <img src="./img/icons/Star.png" alt="star">
+                                    <img src="./img/icons/Star.png" alt="star">
+                                    <img src="./img/icons/Star_grey.png" alt="star">
+                                    4.67 (12 отзывов)
+                                </li>
+                                <li class="card__hits_price">5 190 &#8381<span class="old_price">6 550 &#8381</span><button class="btn_basket"><a href="#"><img src="./img/icons/basket_btn.png" alt="basket"></a></button></li>
+                            </ul>
+                            <ul class="card__hits">
+                                <li class="card__hits_check"><img src="./img/icons/check.png" alt="check">&nbsp;В наличии</li>
+                                <li class="card__hits_img"><a href="#"><img src="./img/goods/hits_binokl3.png" alt="binokl_hits"></a></li>
+                                <li class="card__hits_title">Бинокль БПЦ2 10х40 (обрезин.,<br>рубин)</li>
+                                <li class="card__hits_stars">
+                                    <img src="./img/icons/Star.png" alt="star">
+                                    <img src="./img/icons/Star.png" alt="star">
+                                    <img src="./img/icons/Star.png" alt="star">
+                                    <img src="./img/icons/Star.png" alt="star">
+                                    <img src="./img/icons/Star_grey.png" alt="star">
+                                    4.67 (12 отзывов)
+                                </li>
+                                <li class="card__hits_price">12 190 &#8381<span class="old_price">13 450 &#8381</span><button class="btn_basket"><a href="#"><img src="./img/icons/basket_btn.png" alt="basket"></a></button></li>
+                            </ul>
+                        </div>
+                        <div class="swiper-slide">
+                            <ul class="card__hits">
+                                <li class="card__hits_check"><img src="./img/icons/check.png" alt="check">&nbsp;В наличии</li>
+                                <li class="card__hits_img"><a href="#"><img src="./img/goods/hits_binokl1.png" alt="binokl_hits"></a></li>
+                                <li class="card__hits_title">Бинокль БПЦ2 10х40 (обрезин.,<br>рубин)</li>
+                                <li class="card__hits_stars">
+                                    <img src="./img/icons/Star.png" alt="star">
+                                    <img src="./img/icons/Star.png" alt="star">
+                                    <img src="./img/icons/Star.png" alt="star">
+                                    <img src="./img/icons/Star.png" alt="star">
+                                    <img src="./img/icons/Star_grey.png" alt="star">
+                                    4.67 (12 отзывов)
+                                </li>
+                                <li class="card__hits_price">10 190 &#8381<span class="old_price">12 450 &#8381</span><button class="btn_basket"><a href="#"><img src="./img/icons/basket_btn.png" alt="basket"></a></button></li>
+                            </ul>
+                            <ul class="card__hits">
+                                <li class="card__hits_check"><img src="./img/icons/check.png" alt="check">&nbsp;В наличии</li>
+                                <li class="card__hits_img"><a href="#"><img src="./img/goods/hits_binokl2.png" alt="binokl_hits"></a></li>
+                                <li class="card__hits_title">Бинокль Veber БПЦ Zoom<br>8-32х50</li>
+                                <li class="card__hits_stars">
+                                    <img src="./img/icons/Star.png" alt="star">
+                                    <img src="./img/icons/Star.png" alt="star">
+                                    <img src="./img/icons/Star.png" alt="star">
+                                    <img src="./img/icons/Star.png" alt="star">
+                                    <img src="./img/icons/Star_grey.png" alt="star">
+                                    4.67 (12 отзывов)
+                                </li>
+                                <li class="card__hits_price">7 990 &#8381<span class="old_price">8 450 &#8381</span><button class="btn_basket"><a href="#"><img src="./img/icons/basket_btn.png" alt="basket"></a></button></li>
+                            </ul>
+                            <ul class="card__hits">
+                                <li class="card__hits_check"><img src="./img/icons/check.png" alt="check">&nbsp;В наличии</li>
+                                <li class="card__hits_img"><a href="#"><img src="./img/goods/hits_bag.png" alt="binokl_hits"></a></li>
+                                <li class="card__hits_title">Бинокль БПЦ2 10х40 (обрезин.,<br>рубин)</li>
+                                <li class="card__hits_stars">
+                                    <img src="./img/icons/Star.png" alt="star">
+                                    <img src="./img/icons/Star.png" alt="star">
+                                    <img src="./img/icons/Star.png" alt="star">
+                                    <img src="./img/icons/Star.png" alt="star">
+                                    <img src="./img/icons/Star_grey.png" alt="star">
+                                    4.67 (12 отзывов)
+                                </li>
+                                <li class="card__hits_price">5 190 &#8381<span class="old_price">6 550 &#8381</span><button class="btn_basket"><a href="#"><img src="./img/icons/basket_btn.png" alt="basket"></a></button></li>
+                            </ul>
+                            <ul class="card__hits">
+                                <li class="card__hits_check"><img src="./img/icons/check.png" alt="check">&nbsp;В наличии</li>
+                                <li class="card__hits_img"><a href="#"><img src="./img/goods/hits_binokl3.png" alt="binokl_hits"></a></li>
+                                <li class="card__hits_title">Бинокль БПЦ2 10х40 (обрезин.,<br>рубин)</li>
+                                <li class="card__hits_stars">
+                                    <img src="./img/icons/Star.png" alt="star">
+                                    <img src="./img/icons/Star.png" alt="star">
+                                    <img src="./img/icons/Star.png" alt="star">
+                                    <img src="./img/icons/Star.png" alt="star">
+                                    <img src="./img/icons/Star_grey.png" alt="star">
+                                    4.67 (12 отзывов)
+                                </li>
+                                <li class="card__hits_price">12 190 &#8381<span class="old_price">13 450 &#8381</span><button class="btn_basket"><a href="#"><img src="./img/icons/basket_btn.png" alt="basket"></a></button></li>
+                            </ul>
+                        </div>
+      
+                    </div>
+                    <!-- If we need pagination -->
+                    <!--<div class="swiper-pagination"></div>-->
+  
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+  
+                    <!-- If we need scrollbar -->
+                    <!--<div class="swiper-scrollbar"></div>-->
+                </div>
+                </div>
+           </div>
         </section>
-        <!-- Brands -->
+        <!-- Brends -->
         <section class="section section4">
             <div class="section__container">
                 <div class="section__container_top">
                     <div class="section__container_top--title">Бренды</div>
                     <div class="section__container_top--link">
-                        <h3 class="title_link">Все бренды</h3>
+                        <h3 class="title_link"><a href="#">Все бренды</a></h3>
                         <a href="#"><img src="./img/icons/link_icon.png" alt="link" class="link"></a>
                     </div>
                 </div>
-                <ul class="section__container_brends">
-                    <li class="section__container_brends--list">
-                        <a href="#"><img src="./img/icons/Seeland_brand.png" alt="Seeland" class="card_brend"></a>
+                <ul class="section__container_lists">
+                    <li class="section__container_lists--list card__brend">
+                        <a href="#"><img src="./img/icons/Seeland_brand.png" alt="Seeland" class="card__brend_img"></a> 
                     </li>
-                    <li class="section__container_brends--list">
-                        <a href="#"><img src="./img/icons/Celestron_brand.png" alt="Celestron" class="card_brend"></a>
+                    <li class="section__container_lists--list card__brend">
+                        <a href="#"><img src="./img/icons/Celestron_brand.png" alt="Celestron" class="card__brend_img"></a>
                     </li>
-                    <li class="section__container_brends--list">
-                        <a href="#"><img src="./img/icons/Allen_brand.png" alt="Allen" class="card_brend"></a>
+                    <li class="section__container_lists--list card__brend">
+                        <a href="#"><img src="./img/icons/Allen_brand.png" alt="Allen" class="card__brend_img"></a>
                     </li>
-                    <li class="section__container_brends--list">
-                        <a href="#"><img src="./img/icons/Olympus_brand.png" alt="Olympus" class="card_brend"></a>
+                    <li class="section__container_lists--list card__brend">
+                        <a href="#"><img src="./img/icons/Olympus_brand.png" alt="Olympus" class="card__brend_img"></a>
                     </li>
-                    <li class="section__container_brends--list">
-                        <a href="#"><img src="./img/icons/Bresser_brand.png" alt="Bresser" class="card_brend"></a>
+                    <li class="section__container_lists--list card__brend">
+                        <a href="#"><img src="./img/icons/Bresser_brand.png" alt="Bresser" class="card__brend_img"></a>
                     </li>
                 </ul>
             </div>
         </section>
         <!-- Recomend -->
         <section class="section section5">
-            
+            <div class="section__container">
+                <div class="section__container_top">
+                    <div class="section__container_top--title"><a href="#">Рекомендуемые</a></div>
+                    <div class="section__container_top--title"><a href="#">Новинки</a></div>
+                    <div class="section__container_top--title"><a href="#">Самые просматриваемые</a></div>
+                    <div class="section__container_top--title"><a href="#">Скидки</a></div>
+                    <div class="section__container_top--link">
+                        <h3 class="title_link"><a href="#">Смотреть весь каталог</a></h3>
+                        <a href="#"><img src="./img/icons/link_icon.png" alt="link" class="link"></a>
+                    </div>
+                </div>    
+                <div class="section__container_swiper">
+               <!-- Slider main container -->
+                <div class="swiper">
+                <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                    <!-- Slides -->
+                        <div class="swiper-slide">
+                            <ul class="card__hits">
+                                <li class="card__hits_check"><img src="./img/icons/check.png" alt="check">&nbsp;В наличии</li>
+                                <li class="card__hits_img"><a href="#"><img src="./img/goods/hits_binokl1.png" alt="binokl_hits"></a></li>
+                                <li class="card__hits_title">Бинокль БПЦ2 10х40 (обрезин.,<br>рубин)</li>
+                                <li class="card__hits_stars">
+                                    <img src="./img/icons/Star.png" alt="star">
+                                    <img src="./img/icons/Star.png" alt="star">
+                                    <img src="./img/icons/Star.png" alt="star">
+                                    <img src="./img/icons/Star.png" alt="star">
+                                    <img src="./img/icons/Star_grey.png" alt="star">
+                                    4.67 (12 отзывов)
+                                </li>
+                                <li class="card__hits_price">10 190 &#8381<span class="old_price">12 450 &#8381</span><button class="btn_basket"><a href="#"><img src="./img/icons/basket_btn.png" alt="basket"></a></button></li>
+                            </ul>
+                            <ul class="card__hits">
+                                <li class="card__hits_check"><img src="./img/icons/check.png" alt="check">&nbsp;В наличии</li>
+                                <li class="card__hits_img"><a href="#"><img src="./img/goods/hits_binokl2.png" alt="binokl_hits"></a></li>
+                                <li class="card__hits_title">Бинокль Veber БПЦ Zoom<br>8-32х50</li>
+                                <li class="card__hits_stars">
+                                    <img src="./img/icons/Star.png" alt="star">
+                                    <img src="./img/icons/Star.png" alt="star">
+                                    <img src="./img/icons/Star.png" alt="star">
+                                    <img src="./img/icons/Star.png" alt="star">
+                                    <img src="./img/icons/Star_grey.png" alt="star">
+                                    4.67 (12 отзывов)
+                                </li>
+                                <li class="card__hits_price">7 990 &#8381<span class="old_price">8 450 &#8381</span><button class="btn_basket"><a href="#"><img src="./img/icons/basket_btn.png" alt="basket"></a></button></li>
+                            </ul>
+                            <ul class="card__hits">
+                                <li class="card__hits_check"><img src="./img/icons/check.png" alt="check">&nbsp;В наличии</li>
+                                <li class="card__hits_img"><a href="#"><img src="./img/goods/hits_bag.png" alt="binokl_hits"></a></li>
+                                <li class="card__hits_title">Бинокль БПЦ2 10х40 (обрезин.,<br>рубин)</li>
+                                <li class="card__hits_stars">
+                                    <img src="./img/icons/Star.png" alt="star">
+                                    <img src="./img/icons/Star.png" alt="star">
+                                    <img src="./img/icons/Star.png" alt="star">
+                                    <img src="./img/icons/Star.png" alt="star">
+                                    <img src="./img/icons/Star_grey.png" alt="star">
+                                    4.67 (12 отзывов)
+                                </li>
+                                <li class="card__hits_price">5 190 &#8381<span class="old_price">6 550 &#8381</span><button class="btn_basket"><a href="#"><img src="./img/icons/basket_btn.png" alt="basket"></a></button></li>
+                            </ul>
+                            <ul class="card__hits">
+                                <li class="card__hits_check"><img src="./img/icons/check.png" alt="check">&nbsp;В наличии</li>
+                                <li class="card__hits_img"><a href="#"><img src="./img/goods/hits_binokl3.png" alt="binokl_hits"></a></li>
+                                <li class="card__hits_title">Бинокль БПЦ2 10х40 (обрезин.,<br>рубин)</li>
+                                <li class="card__hits_stars">
+                                    <img src="./img/icons/Star.png" alt="star">
+                                    <img src="./img/icons/Star.png" alt="star">
+                                    <img src="./img/icons/Star.png" alt="star">
+                                    <img src="./img/icons/Star.png" alt="star">
+                                    <img src="./img/icons/Star_grey.png" alt="star">
+                                    4.67 (12 отзывов)
+                                </li>
+                                <li class="card__hits_price">12 190 &#8381<span class="old_price">13 450 &#8381</span><button class="btn_basket"><a href="#"><img src="./img/icons/basket_btn.png" alt="basket"></a></button></li>
+                            </ul>
+                        </div>
+                        <div class="swiper-slide">
+                            <ul class="card__hits">
+                                <li class="card__hits_check"><img src="./img/icons/check.png" alt="check">&nbsp;В наличии</li>
+                                <li class="card__hits_img"><a href="#"><img src="./img/goods/hits_binokl1.png" alt="binokl_hits"></a></li>
+                                <li class="card__hits_title">Бинокль БПЦ2 10х40 (обрезин.,<br>рубин)</li>
+                                <li class="card__hits_stars">
+                                    <img src="./img/icons/Star.png" alt="star">
+                                    <img src="./img/icons/Star.png" alt="star">
+                                    <img src="./img/icons/Star.png" alt="star">
+                                    <img src="./img/icons/Star.png" alt="star">
+                                    <img src="./img/icons/Star_grey.png" alt="star">
+                                    4.67 (12 отзывов)
+                                </li>
+                                <li class="card__hits_price">10 190 &#8381<span class="old_price">12 450 &#8381</span><button class="btn_basket"><a href="#"><img src="./img/icons/basket_btn.png" alt="basket"></a></button></li>
+                            </ul>
+                            <ul class="card__hits">
+                                <li class="card__hits_check"><img src="./img/icons/check.png" alt="check">&nbsp;В наличии</li>
+                                <li class="card__hits_img"><a href="#"><img src="./img/goods/hits_binokl2.png" alt="binokl_hits"></a></li>
+                                <li class="card__hits_title">Бинокль Veber БПЦ Zoom<br>8-32х50</li>
+                                <li class="card__hits_stars">
+                                    <img src="./img/icons/Star.png" alt="star">
+                                    <img src="./img/icons/Star.png" alt="star">
+                                    <img src="./img/icons/Star.png" alt="star">
+                                    <img src="./img/icons/Star.png" alt="star">
+                                    <img src="./img/icons/Star_grey.png" alt="star">
+                                    4.67 (12 отзывов)
+                                </li>
+                                <li class="card__hits_price">7 990 &#8381<span class="old_price">8 450 &#8381</span><button class="btn_basket"><a href="#"><img src="./img/icons/basket_btn.png" alt="basket"></a></button></li>
+                            </ul>
+                            <ul class="card__hits">
+                                <li class="card__hits_check"><img src="./img/icons/check.png" alt="check">&nbsp;В наличии</li>
+                                <li class="card__hits_img"><a href="#"><img src="./img/goods/hits_bag.png" alt="binokl_hits"></a></li>
+                                <li class="card__hits_title">Бинокль БПЦ2 10х40 (обрезин.,<br>рубин)</li>
+                                <li class="card__hits_stars">
+                                    <img src="./img/icons/Star.png" alt="star">
+                                    <img src="./img/icons/Star.png" alt="star">
+                                    <img src="./img/icons/Star.png" alt="star">
+                                    <img src="./img/icons/Star.png" alt="star">
+                                    <img src="./img/icons/Star_grey.png" alt="star">
+                                    4.67 (12 отзывов)
+                                </li>
+                                <li class="card__hits_price">5 190 &#8381<span class="old_price">6 550 &#8381</span><button class="btn_basket"><a href="#"><img src="./img/icons/basket_btn.png" alt="basket"></a></button></li>
+                            </ul>
+                            <ul class="card__hits">
+                                <li class="card__hits_check"><img src="./img/icons/check.png" alt="check">&nbsp;В наличии</li>
+                                <li class="card__hits_img"><a href="#"><img src="./img/goods/hits_binokl3.png" alt="binokl_hits"></a></li>
+                                <li class="card__hits_title">Бинокль БПЦ2 10х40 (обрезин.,<br>рубин)</li>
+                                <li class="card__hits_stars">
+                                    <img src="./img/icons/Star.png" alt="star">
+                                    <img src="./img/icons/Star.png" alt="star">
+                                    <img src="./img/icons/Star.png" alt="star">
+                                    <img src="./img/icons/Star.png" alt="star">
+                                    <img src="./img/icons/Star_grey.png" alt="star">
+                                    4.67 (12 отзывов)
+                                </li>
+                                <li class="card__hits_price">12 190 &#8381<span class="old_price">13 450 &#8381</span><button class="btn_basket"><a href="#"><img src="./img/icons/basket_btn.png" alt="basket"></a></button></li>
+                            </ul>
+                        </div>
+                        <div class="swiper-slide">
+                            <ul class="card__hits">
+                                <li class="card__hits_check"><img src="./img/icons/check.png" alt="check">&nbsp;В наличии</li>
+                                <li class="card__hits_img"><a href="#"><img src="./img/goods/hits_binokl1.png" alt="binokl_hits"></a></li>
+                                <li class="card__hits_title">Бинокль БПЦ2 10х40 (обрезин.,<br>рубин)</li>
+                                <li class="card__hits_stars">
+                                    <img src="./img/icons/Star.png" alt="star">
+                                    <img src="./img/icons/Star.png" alt="star">
+                                    <img src="./img/icons/Star.png" alt="star">
+                                    <img src="./img/icons/Star.png" alt="star">
+                                    <img src="./img/icons/Star_grey.png" alt="star">
+                                    4.67 (12 отзывов)
+                                </li>
+                                <li class="card__hits_price">10 190 &#8381<span class="old_price">12 450 &#8381</span><button class="btn_basket"><a href="#"><img src="./img/icons/basket_btn.png" alt="basket"></a></button></li>
+                            </ul>
+                            <ul class="card__hits">
+                                <li class="card__hits_check"><img src="./img/icons/check.png" alt="check">&nbsp;В наличии</li>
+                                <li class="card__hits_img"><a href="#"><img src="./img/goods/hits_binokl2.png" alt="binokl_hits"></a></li>
+                                <li class="card__hits_title">Бинокль Veber БПЦ Zoom<br>8-32х50</li>
+                                <li class="card__hits_stars">
+                                    <img src="./img/icons/Star.png" alt="star">
+                                    <img src="./img/icons/Star.png" alt="star">
+                                    <img src="./img/icons/Star.png" alt="star">
+                                    <img src="./img/icons/Star.png" alt="star">
+                                    <img src="./img/icons/Star_grey.png" alt="star">
+                                    4.67 (12 отзывов)
+                                </li>
+                                <li class="card__hits_price">7 990 &#8381<span class="old_price">8 450 &#8381</span><button class="btn_basket"><a href="#"><img src="./img/icons/basket_btn.png" alt="basket"></a></button></li>
+                            </ul>
+                            <ul class="card__hits">
+                                <li class="card__hits_check"><img src="./img/icons/check.png" alt="check">&nbsp;В наличии</li>
+                                <li class="card__hits_img"><a href="#"><img src="./img/goods/hits_bag.png" alt="binokl_hits"></a></li>
+                                <li class="card__hits_title">Бинокль БПЦ2 10х40 (обрезин.,<br>рубин)</li>
+                                <li class="card__hits_stars">
+                                    <img src="./img/icons/Star.png" alt="star">
+                                    <img src="./img/icons/Star.png" alt="star">
+                                    <img src="./img/icons/Star.png" alt="star">
+                                    <img src="./img/icons/Star.png" alt="star">
+                                    <img src="./img/icons/Star_grey.png" alt="star">
+                                    4.67 (12 отзывов)
+                                </li>
+                                <li class="card__hits_price">5 190 &#8381<span class="old_price">6 550 &#8381</span><button class="btn_basket"><a href="#"><img src="./img/icons/basket_btn.png" alt="basket"></a></button></li>
+                            </ul>
+                            <ul class="card__hits">
+                                <li class="card__hits_check"><img src="./img/icons/check.png" alt="check">&nbsp;В наличии</li>
+                                <li class="card__hits_img"><a href="#"><img src="./img/goods/hits_binokl3.png" alt="binokl_hits"></a></li>
+                                <li class="card__hits_title">Бинокль БПЦ2 10х40 (обрезин.,<br>рубин)</li>
+                                <li class="card__hits_stars">
+                                    <img src="./img/icons/Star.png" alt="star">
+                                    <img src="./img/icons/Star.png" alt="star">
+                                    <img src="./img/icons/Star.png" alt="star">
+                                    <img src="./img/icons/Star.png" alt="star">
+                                    <img src="./img/icons/Star_grey.png" alt="star">
+                                    4.67 (12 отзывов)
+                                </li>
+                                <li class="card__hits_price">12 190 &#8381<span class="old_price">13 450 &#8381</span><button class="btn_basket"><a href="#"><img src="./img/icons/basket_btn.png" alt="basket"></a></button></li>
+                            </ul>
+                        </div>
+                        <div class="swiper-slide">
+                            <ul class="card__hits">
+                                <li class="card__hits_check"><img src="./img/icons/check.png" alt="check">&nbsp;В наличии</li>
+                                <li class="card__hits_img"><a href="#"><img src="./img/goods/hits_binokl1.png" alt="binokl_hits"></a></li>
+                                <li class="card__hits_title">Бинокль БПЦ2 10х40 (обрезин.,<br>рубин)</li>
+                                <li class="card__hits_stars">
+                                    <img src="./img/icons/Star.png" alt="star">
+                                    <img src="./img/icons/Star.png" alt="star">
+                                    <img src="./img/icons/Star.png" alt="star">
+                                    <img src="./img/icons/Star.png" alt="star">
+                                    <img src="./img/icons/Star_grey.png" alt="star">
+                                    4.67 (12 отзывов)
+                                </li>
+                                <li class="card__hits_price">10 190 &#8381<span class="old_price">12 450 &#8381</span><button class="btn_basket"><a href="#"><img src="./img/icons/basket_btn.png" alt="basket"></a></button></li>
+                            </ul>
+                            <ul class="card__hits">
+                                <li class="card__hits_check"><img src="./img/icons/check.png" alt="check">&nbsp;В наличии</li>
+                                <li class="card__hits_img"><a href="#"><img src="./img/goods/hits_binokl2.png" alt="binokl_hits"></a></li>
+                                <li class="card__hits_title">Бинокль Veber БПЦ Zoom<br>8-32х50</li>
+                                <li class="card__hits_stars">
+                                    <img src="./img/icons/Star.png" alt="star">
+                                    <img src="./img/icons/Star.png" alt="star">
+                                    <img src="./img/icons/Star.png" alt="star">
+                                    <img src="./img/icons/Star.png" alt="star">
+                                    <img src="./img/icons/Star_grey.png" alt="star">
+                                    4.67 (12 отзывов)
+                                </li>
+                                <li class="card__hits_price">7 990 &#8381<span class="old_price">8 450 &#8381</span><button class="btn_basket"><a href="#"><img src="./img/icons/basket_btn.png" alt="basket"></a></button></li>
+                            </ul>
+                            <ul class="card__hits">
+                                <li class="card__hits_check"><img src="./img/icons/check.png" alt="check">&nbsp;В наличии</li>
+                                <li class="card__hits_img"><a href="#"><img src="./img/goods/hits_bag.png" alt="binokl_hits"></a></li>
+                                <li class="card__hits_title">Бинокль БПЦ2 10х40 (обрезин.,<br>рубин)</li>
+                                <li class="card__hits_stars">
+                                    <img src="./img/icons/Star.png" alt="star">
+                                    <img src="./img/icons/Star.png" alt="star">
+                                    <img src="./img/icons/Star.png" alt="star">
+                                    <img src="./img/icons/Star.png" alt="star">
+                                    <img src="./img/icons/Star_grey.png" alt="star">
+                                    4.67 (12 отзывов)
+                                </li>
+                                <li class="card__hits_price">5 190 &#8381<span class="old_price">6 550 &#8381</span><button class="btn_basket"><a href="#"><img src="./img/icons/basket_btn.png" alt="basket"></a></button></li>
+                            </ul>
+                            <ul class="card__hits">
+                                <li class="card__hits_check"><img src="./img/icons/check.png" alt="check">&nbsp;В наличии</li>
+                                <li class="card__hits_img"><a href="#"><img src="./img/goods/hits_binokl3.png" alt="binokl_hits"></a></li>
+                                <li class="card__hits_title">Бинокль БПЦ2 10х40 (обрезин.,<br>рубин)</li>
+                                <li class="card__hits_stars">
+                                    <img src="./img/icons/Star.png" alt="star">
+                                    <img src="./img/icons/Star.png" alt="star">
+                                    <img src="./img/icons/Star.png" alt="star">
+                                    <img src="./img/icons/Star.png" alt="star">
+                                    <img src="./img/icons/Star_grey.png" alt="star">
+                                    4.67 (12 отзывов)
+                                </li>
+                                <li class="card__hits_price">12 190 &#8381<span class="old_price">13 450 &#8381</span><button class="btn_basket"><a href="#"><img src="./img/icons/basket_btn.png" alt="basket"></a></button></li>
+                            </ul>
+                        </div>
+      
+                    </div>
+                    <!-- If we need pagination -->
+                    <!--<div class="swiper-pagination"></div>-->
+  
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+  
+                    <!-- If we need scrollbar -->
+                    <!--<div class="swiper-scrollbar"></div>-->
+                </div>
+                </div>
+           </div>
         </section>
         <!-- Icons -->
         <section class="section section6">
             <div class="section__container">
-                <ul class="section__container_icons">
-                    <li class="section__container_icons--list">
-                        <div class="card_icon">
-                            <p class="title_icon">Быстрая<br>доставка</p>
-                            <img src="./img/icons/Dostavka.png" alt="delivery" class="icon_img">
+                <ul class="section__container_lists">
+                    <li class="section__container_lists--list card">
+                        <div class="card__icon">
+                            <p class="card__icon_title">Быстрая<br>доставка</p>
+                            <img src="./img/icons/Dostavka.png" alt="delivery" class="card__icon_img">
                         </div>
                     </li>
-                    <li class="section__container_icons--list">
-                        <div class="card_icon">
-                            <p class="title_icon">Весь товар<br>сертифицирован</p>
-                            <img src="./img/icons/Sertificat.png" alt="sertificat" class="icon_img">
+                    <li class="section__container_lists--list card">
+                        <div class="card__icon">
+                            <p class="card__icon_title">Весь товар<br>сертифицирован</p>
+                            <img src="./img/icons/Sertificat.png" alt="sertificat" class="card__icon_img">
                         </div>
                     </li>
-                    <li class="section__container_icons--list">
-                        <div class="card_icon">
-                            <p class="title_icon">3 года<br>гарантии</p>
-                            <img src="./img/icons/Garanties.png" alt="garantie" class="icon_img">
+                    <li class="section__container_lists--list card">
+                        <div class="card__icon">
+                            <p class="card__icon_title">3 года<br>гарантии</p>
+                            <img src="./img/icons/Garanties.png" alt="garantie" class="card__icon_img">
                         </div>
                     </li>
-                    <li class="section__container_icons--list">
-                        <div class="card_icon">
-                            <p class="title_icon">10 лет<br>на рынке</p>
-                            <img src="./img/icons/10Years.png" alt="10 years" class="icon_img">
+                    <li class="section__container_lists--list card">
+                        <div class="card__icon">
+                            <p class="card__icon_title">10 лет<br>на рынке</p>
+                            <img src="./img/icons/10Years.png" alt="10 years" class="card__icon_img">
                         </div>
                     </li>
                 </ul>
@@ -314,7 +857,165 @@
         </section>
         <!-- Goods -->
         <section class="section section7">
-            
+            <div class="section__container">
+                <div class="section__container_top">
+                    <div class="section__container_top--title">Наши товары</div>
+                </div>
+                <ul class="section__container_lists">
+                    <li class="section__container_lists--list card__goods">
+                        <a href="#"><img src="./img/icons/binokl.png" alt="Binokles" class="card__goods_img"></a>
+                        <ul class="card__goods_lists">
+                            <li class="card__goods_lists--list list_title">Бинокли</li>
+                            <li class="card__goods_lists--list"><a href="#">Армейско-полевой<span class="list_counter">(58)</span></a></li>
+                            <li class="card__goods_lists--list"><a href="#">Астрономический<span class="list_counter">(35)</span></a></li>
+                            <li class="card__goods_lists--list"><a href="#">Для города<span class="list_counter">(49)</span></a></li>
+                            <li class="card__goods_lists--list"><a href="#">Для детей<span class="list_counter">(54)</span></a></li>
+                            <li class="card__goods_lists--list"><a href="#">Для охоты и рыбалки<span class="list_counter">(63)</span></a></li>
+                            <li class="card__goods_lists--list"><a href="#">Любительский<span class="list_counter">(32)</span></a></li>
+                            <li class="card__goods_lists--list"><a href="#">Для профессионалов<span class="list_counter">(19)</span></a></li>
+                            <li class="card__goods_lists--list">
+                                <button class="view_all"><a href="#">Показать все</a></button>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="section__container_lists--list card__goods">
+                        <a href="#"><img src="./img/icons/microskope.png" alt="microscopes" class="card__goods_img"></a>
+                        <ul class="card__goods_lists">
+                            <li class="card__goods_lists--list list_title">Микроскопы</li>
+                            <li class="card__goods_lists--list"><a href="#">Армейско-полевой<span class="list_counter">(58)</span></a></li>
+                            <li class="card__goods_lists--list"><a href="#">Астрономический<span class="list_counter">(35)</span></a></li>
+                            <li class="card__goods_lists--list"><a href="#">Для города<span class="list_counter">(49)</span></a></li>
+                            <li class="card__goods_lists--list"><a href="#">Для детей<span class="list_counter">(54)</span></a></li>
+                            <li class="card__goods_lists--list"><a href="#">Для охоты и рыбалки<span class="list_counter">(63)</span></a></li>
+                            <li class="card__goods_lists--list"><a href="#">Любительский<span class="list_counter">(32)</span></a></li>
+                            <li class="card__goods_lists--list"><a href="#">Для профессионалов<span class="list_counter">(19)</span></a></li>
+                            <li class="card__goods_lists--list">
+                                <button class="view_all"><a href="#">Показать все</a></button>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="section__container_lists--list card__goods">
+                        <a href="#"><img src="./img/icons/telescope.png" alt="telecsopes" class="card__goods_img"></a>
+                        <ul class="card__goods_lists">
+                            <li class="card__goods_lists--list list_title">Телескопы</li>
+                            <li class="card__goods_lists--list"><a href="#">Армейско-полевой<span class="list_counter">(58)</span></a></li>
+                            <li class="card__goods_lists--list"><a href="#">Астрономический<span class="list_counter">(35)</span></a></li>
+                            <li class="card__goods_lists--list"><a href="#">Для города<span class="list_counter">(49)</span></a></li>
+                            <li class="card__goods_lists--list"><a href="#">Для детей<span class="list_counter">(54)</span></a></li>
+                            <li class="card__goods_lists--list"><a href="#">Для охоты и рыбалки<span class="list_counter">(63)</span></a></li>
+                            <li class="card__goods_lists--list"><a href="#">Любительский<span class="list_counter">(32)</span></a></li>
+                            <li class="card__goods_lists--list"><a href="#">Для профессионалов<span class="list_counter">(19)</span></a></li>
+                            <li class="card__goods_lists--list">
+                                <button class="view_all"><a href="#">Показать все</a></button>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="section__container_lists--list card__goods">
+                        <a href="#"><img src="./img/icons/monokular.png" alt="monokulars" class="card__goods_img"></a>
+                        <ul class="card__goods_lists">
+                            <li class="card__goods_lists--list list_title">Монокуляры</li>
+                            <li class="card__goods_lists--list"><a href="#">Армейско-полевой<span class="list_counter">(58)</span></a></li>
+                            <li class="card__goods_lists--list"><a href="#">Астрономический<span class="list_counter">(35)</span></a></li>
+                            <li class="card__goods_lists--list"><a href="#">Для города<span class="list_counter">(49)</span></a></li>
+                            <li class="card__goods_lists--list"><a href="#">Для детей<span class="list_counter">(54)</span></a></li>
+                            <li class="card__goods_lists--list"><a href="#">Для охоты и рыбалки<span class="list_counter">(63)</span></a></li>
+                            <li class="card__goods_lists--list"><a href="#">Любительский<span class="list_counter">(32)</span></a></li>
+                            <li class="card__goods_lists--list"><a href="#">Для профессионалов<span class="list_counter">(19)</span></a></li>
+                            <li class="card__goods_lists--list">
+                                <button class="view_all"><a href="#">Показать все</a></button>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="section__container_lists--list card__goods">
+                        <a href="#"><img src="./img/icons/watchtube.png" alt="wach_tubes" class="card__goods_img"></a>
+                        <ul class="card__goods_lists">
+                            <li class="card__goods_lists--list list_title">Зрительные трубы</li>
+                            <li class="card__goods_lists--list"><a href="#">Армейско-полевой<span class="list_counter">(58)</span></a></li>
+                            <li class="card__goods_lists--list"><a href="#">Астрономический<span class="list_counter">(35)</span></a></li>
+                            <li class="card__goods_lists--list"><a href="#">Для города<span class="list_counter">(49)</span></a></li>
+                            <li class="card__goods_lists--list"><a href="#">Для детей<span class="list_counter">(54)</span></a></li>
+                            <li class="card__goods_lists--list"><a href="#">Для охоты и рыбалки<span class="list_counter">(63)</span></a></li>
+                            <li class="card__goods_lists--list"><a href="#">Любительский<span class="list_counter">(32)</span></a></li>
+                            <li class="card__goods_lists--list"><a href="#">Для профессионалов<span class="list_counter">(19)</span></a></li>
+                            <li class="card__goods_lists--list">
+                                <button class="view_all"><a href="#">Показать все</a></button>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="section__container_lists--list card__goods">
+                        <a href="#"><img src="./img/icons/lupa.png" alt="lups" class="card__goods_img"></a>
+                        <ul class="card__goods_lists">
+                            <li class="card__goods_lists--list list_title">Лупы</li>
+                            <li class="card__goods_lists--list"><a href="#">Армейско-полевой<span class="list_counter">(58)</span></a></li>
+                            <li class="card__goods_lists--list"><a href="#">Астрономический<span class="list_counter">(35)</span></a></li>
+                            <li class="card__goods_lists--list"><a href="#">Для города<span class="list_counter">(49)</span></a></li>
+                            <li class="card__goods_lists--list"><a href="#">Для детей<span class="list_counter">(54)</span></a></li>
+                            <li class="card__goods_lists--list"><a href="#">Для охоты и рыбалки<span class="list_counter">(63)</span></a></li>
+                            <li class="card__goods_lists--list"><a href="#">Любительский<span class="list_counter">(32)</span></a></li>
+                            <li class="card__goods_lists--list"><a href="#">Для профессионалов<span class="list_counter">(19)</span></a></li>
+                            <li class="card__goods_lists--list">
+                                <button class="view_all"><a href="#">Показать все</a></button>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="section__container_lists--list card__goods">
+                        <a href="#"><img src="./img/icons/dalnomer.png" alt="dalnomers" class="card__goods_img"></a>
+                        <ul class="card__goods_lists">
+                            <li class="card__goods_lists--list list_title">Дальномеры</li>
+                            <li class="card__goods_lists--list"><a href="#">Армейско-полевой<span class="list_counter">(58)</span></a></li>
+                            <li class="card__goods_lists--list"><a href="#">Астрономический<span class="list_counter">(35)</span></a></li>
+                            <li class="card__goods_lists--list"><a href="#">Для города<span class="list_counter">(49)</span></a></li>
+                            <li class="card__goods_lists--list"><a href="#">Для детей<span class="list_counter">(54)</span></a></li>
+                            <li class="card__goods_lists--list"><a href="#">Для охоты и рыбалки<span class="list_counter">(63)</span></a></li>
+                            <li class="card__goods_lists--list"><a href="#">Любительский<span class="list_counter">(32)</span></a></li>
+                            <li class="card__goods_lists--list"><a href="#">Для профессионалов<span class="list_counter">(19)</span></a></li>
+                            <li class="card__goods_lists--list">
+                                <button class="view_all"><a href="#">Показать все</a></button>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="section__container_lists--list card__goods">
+                        <a href="#"><img src="./img/icons/night_vision.png" alt="night_vision" class="card__goods_img"></a>
+                        <ul class="card__goods_lists">
+                            <li class="card__goods_lists--list list_title">Приборы ночного<br>видения</li>
+                            <li class="card__goods_lists--list"><a href="#">Армейско-полевой<span class="list_counter">(58)</span></a></li>
+                            <li class="card__goods_lists--list"><a href="#">Астрономический<span class="list_counter">(35)</span></a></li>
+                            <li class="card__goods_lists--list"><a href="#">Для города<span class="list_counter">(49)</span></a></li>
+                            <li class="card__goods_lists--list"><a href="#">Для детей<span class="list_counter">(54)</span></a></li>
+                            <li class="card__goods_lists--list"><a href="#">Для охоты и рыбалки<span class="list_counter">(63)</span></a></li>
+                            <li class="card__goods_lists--list"><a href="#">Любительский<span class="list_counter">(32)</span></a></li>
+                            <li class="card__goods_lists--list"><a href="#">Для профессионалов<span class="list_counter">(19)</span></a></li>
+                            <li class="card__goods_lists--list">
+                                <button class="view_all"><a href="#">Показать все</a></button>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="section__container_lists--list card__goods">
+                        <a href="#"><img src="./img/icons/teplovizor.png" alt="teplovizors" class="card__goods_img"></a>
+                        <ul class="card__goods_lists">
+                            <li class="card__goods_lists--list list_title">Тепловизоры</li>
+                            <li class="card__goods_lists--list"><a href="#">Армейско-полевой<span class="list_counter">(58)</span></a></li>
+                            <li class="card__goods_lists--list"><a href="#">Астрономический<span class="list_counter">(35)</span></a></li>
+                            <li class="card__goods_lists--list"><a href="#">Для города<span class="list_counter">(49)</span></a></li>
+                            <li class="card__goods_lists--list"><a href="#">Для детей<span class="list_counter">(54)</span></a></li>
+                            <li class="card__goods_lists--list"><a href="#">Для охоты и рыбалки<span class="list_counter">(63)</span></a></li>
+                            <li class="card__goods_lists--list"><a href="#">Любительский<span class="list_counter">(32)</span></a></li>
+                            <li class="card__goods_lists--list"><a href="#">Для профессионалов<span class="list_counter">(19)</span></a></li>
+                            <li class="card__goods_lists--list">
+                                <button class="view_all"><a href="#">Показать все</a></button>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
         </section>
         <!-- Info -->
         <section class="section section8">
@@ -333,31 +1034,80 @@
                     </h1>
                 </div>
                 <ul class="section__container_description">
-                    <li class="section_container_description--list">
-                        <p>улучшение соотношения цена-качество путем предоставления скидок постоянным клиентам;</p>
+                    <li class="section__container_description--list">
+                        улучшение соотношения цена-качество путем предоставления скидок постоянным клиентам;
                     </li>
-                    <li class="section_container_description--list">
-                        <p>многообразие возможностей доставки и оплаты Ваших покупок;</p>
+                    <li class="section__container_description--list">
+                        многообразие возможностей доставки и оплаты Ваших покупок;
                     </li>
-                    <li class="section_container_description--list">
-                        <p>увеличение количества дополнительных услуг;</p>
+                    <li class="section__container_description--list">
+                        увеличение количества дополнительных услуг;
                     </li>
-                    <li class="section_container_description--list">
-                        <p>сотрудничество с самыми известными производителями оптических приборов и развивающих игрушек; </p>
+                    <li class="section__container_description--list">
+                        сотрудничество с самыми известными производителями оптических приборов и развивающих игрушек;
                     </li>
-                    <li class="section_container_description--list">
-                        <p>грамотные консультации по всему представленному ассортименту;</p>
+                    <li class="section__container_description--list">
+                        грамотные консультации по всему представленному ассортименту;
                     </li>
-                    <li class="section_container_description--list ">
-                        <p>обеспечения безупречного качества поставляемых товаров.</p>
+                    <li class="section__container_description--list">
+                        обеспечения безупречного качества поставляемых товаров.
                     </li>
-                    
                 </ul>
             </div>
         </section>
         <!-- counters -->
         <section class="section section9">
-            
+            <div class="section__container">
+                <ul class="section__container_lists">
+                    <li class="section__container_lists--list card__counters" >
+                        <div class="card__counters_img">
+                            <img src="./img/icons/eye.png" alt="eye">
+                        </div>
+                        <div class="card__counters_title"><a href="#">Просмотренные</a></div>
+                        <div class="card__counters_counter">
+                            <img src="./img/icons/zero_count.png" alt="counter">
+                        </div>
+                    </li>
+                    <li class="section__container_lists--list card__counters" >
+                        <div class="card__counters_devider">|</div>
+                    </li>
+                    <li class="section__container_lists--list card__counters">
+                        
+                        <div class="card__counters_img">
+                            <img src="./img/icons/scales.png" alt="scales">
+                        </div>
+                        <div class="card__counters_title"><a href="#">Сравнение товаров</a></div>
+                        <div class="card__counters_counter">
+                            <img src="./img/icons/zero_count.png" alt="counter">
+                        </div>
+                    </li>
+                    <li class="section__container_lists--list card__counters" >
+                        <div class="card__counters_devider">|</div>
+                    </li>
+                    <li class="section__container_lists--list card__counters">
+                        <div class="card__counters_img">
+                            <img src="./img/icons/heart.png" alt="heart">
+                        </div>
+                        <div class="card__counters_title"><a href="#">Избранное</a></div>
+                        <div class="card__counters_counter">
+                            <img src="./img/icons/zero_count.png" alt="counter">
+                        </div>
+                        
+                    </li>
+                    <li class="section__container_lists--list card__counters" >
+                        <div class="card__counters_devider">|</div>
+                    </li>
+                    <li class="section__container_lists--list card__counters">
+                        <div class="card__counters_img">
+                            <img src="./img/icons/basket_grey.png" alt="basket">
+                        </div>
+                        <div class="card__counters_title"><a href="#">Корзина</a></div>
+                        <div class="card__counters_counter">
+                            <img src="./img/icons/7.png" alt="counter">
+                        </div>
+                    </li>
+                </ul>
+            </div>
         </section>
             
     </main>
@@ -500,6 +1250,30 @@
             </div>
         </div>
     </footer>
+
+      <!-- Modal -->
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi suscipit, odio laborum nam tenetur ipsam praesentium molestias officiis error! Iste eaque molestiae veritatis quidem quis error adipisci. Consequuntur magni officia molestias facilis vitae. Placeat tempora vitae repellat ab quis, nisi quos, consequatur possimus saepe beatae dolore incidunt neque numquam voluptate?
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <!--Up to start-->
+    <div class="btns btns__add btns__up btns__up_hide">UP</div>
+
+    <!--Button trigger modal-->
+    <a class="btns btns_add" data-toggle="modal" data-target="#exampleModalCenter">Modal</a>
+   
     
     <!-- Bootstrap script -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
@@ -508,7 +1282,14 @@
 
     <!-- Swiper -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-
     <script type="module" src="./js/swiper.js"></script>
+
+    <!-- Scroll Up -->
+    <script type="module" src="./js/scroll_up.js"></script>
+    <!-- Modal -->
+    <script type="module" src="./js/modal.js"></script>
+     
+    <!-- Open menu -->
+    <script src="./js/menu.js"></script>
 </body>
 </html>

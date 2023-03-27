@@ -7,7 +7,7 @@ body {
     overflow-x: hidden;
 }
 
-.conteiner {
+.container {
     @include container();
 }
 
@@ -21,6 +21,45 @@ body {
     clear: left;
 }
 
+.title_link {
+    margin: $m-0-5;
+}
 
+.list_title {
+    font-weight: $font-w-700;
+    font-size: $font-18;
+    color: $color-dark-grey;
+    margin-bottom: $m-1;
+}
 
+.list_counter {
+    font-weight: $font-w-500;
+    font-size: $font-12;
+    color: $color-4-light-grey;
+    margin-left: $m-0-3;
+}
+
+.old_price {
+    text-decoration-line: line-through;
+    margin-left: $m-0-5;
+
+    font-size: $font-16;
+    font-weight: $font-w-500;;
+
+    color: $color-4-light-grey;
+}
+
+.modal {
+    
+    &-header {
+      background: $color-light-yellow;
+      color: $color-2-dark-blue;
+      border-bottom: none;
+    }
+    &-body {
+      background:$color-5-light-grey;
+      color: $color-dark-grey;
+      
+    }
+  }
 

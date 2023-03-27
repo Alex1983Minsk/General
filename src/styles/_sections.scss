@@ -4,11 +4,6 @@
     &__container {
         margin: 0 auto;
 
-        &_description {
-            font-size: $font-16;
-            font-weight: $font-w-400;
-        }
-       
         &_top {
             @include flex();
             margin: $m-1 0;
@@ -16,6 +11,12 @@
             &--title {
                 font-weight: $font-w-700;
                 font-size: $font-32;
+                margin:$m-1;
+
+                & a:hover {
+                    color: $color-middle-blue;
+                    border-bottom: 4px solid $color-middle-blue;
+                }
                
             }
 
@@ -27,42 +28,60 @@
                 margin: $m-1;
                 text-align: right;
 
-                .title_link {
-                    margin: $m-0-5;
-                }
-            }
-        }
-
-        &_products {
-            
-            &--card {
-                @include flex();
-               
-            
-            }
-        }
-
-        &_brends {
-            @include flex();
-                        
-            
-            
-        }
-        &_icons {
-            @include flex();
-                        
                 
+            }
+        }
+
+        &_lists {
+            @include flex();
             
         }
+
+        &_description {
+            font-size: $font-16;
+            font-weight: $font-w-400;
+            margin-left: $m-3;
+            line-height: 22px;
+
+            &--list {
+                padding: $p-1;
+                font-size: $font-16;
+                font-weight: $font-w-400;
+                list-style-type: disc;
+            }
+
+        }
+
+        &_swiper {
+           max-width: 1280px;
+           margin: 0 auto;
+        }
+
     }
 
     
+}
+
+.section1 {
+    height: 460px;
+    background-color: $color-8-light-grey;
+}
+
+.section3 {
+    height: 628px;
+    background-color: $color-8-light-grey;
+
 }
 
 .section4 {
     height:286px;
     background-color: $color-white;
     
+}
+
+.section5 {
+    height:624px;
+    background-color: $color-8-light-grey;
 }
 
 .section6 {
@@ -72,7 +91,18 @@
 }
 
 .section8 {
-    height:520px;
+    height:540px;
     background-color: $color-white;
+}
+
+.section7 {
+    height:1201px;
+    background-color: $color-8-light-grey;
+
+}
+
+.section9 {
+    height:100px;
+    background-color: $color-2-light-grey;
 }
 

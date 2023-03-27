@@ -1,0 +1,25 @@
+.slider-top {
+    width: 876px;
+    padding: $p-0-5;
+   
+    margin: 0 auto;
+
+    &__area {
+        margin: $m-1;
+
+        &_slides {
+
+            &--slide {
+                background-image: url('../img/goods/main_slider.png');
+                border-radius: 10px;
+                width: 876px;
+                height: 415px;
+            }
+        }
+    }
+}
+
+
+
+
+
