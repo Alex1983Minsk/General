@@ -22,87 +22,7 @@
                 &--list {
                     margin: $m-1;
                     clear:left;
-
-                    .logo_footer {
-                        float:left;
-                        margin: $m-1;
-                        
-                        .name_title {
-                            font-size: $font-20;
-                            font-weight: $font-w-400;
-                            margin: $m-0-5;
-                            margin-top: -10px;
-                            margin-left: -15px;
-                            padding: $p-0-3;
-                            
-                        }
-                        .description_title {
-                            font-size: $font-6;
-                            color:$color-3-dark-blue;
-                            margin: $m-0-5;
-                            margin-top: -14px;
-                            margin-left: -15px;
-                            padding: $p-0-3;
-                        }
-                    }
-                    .logo_img_footer {
-                        margin: $m-1;
-                        margin-left:-5px;
-                        
-
-                        .logo_icon_centr_footer {
-                            background-image: url('../img/icons/logo_round.png');
-                            background-repeat: no-repeat;
-                            padding: $p-0-5;
-                            float: left;
-
-                        }
-                    }
-
-                    .footer_adress_icon,
-                    .footer_clocks_icon,
-                    .footer_mail_icon {
-                        float:left;
-                        margin:$m-0-3;
-                    }
-
-                    .footer_adress,
-                    .footer_time,
-                    .footer_mail,
-                    .footer_yandex {
-                        margin:$m-1;
-                    }
-
-                    .footer_mail a {
-
-                        &:hover {
-                            @include transition();
-                            color: $color-middle-blue;
-                        }
-
-                    }
-
-                    .footer_yandex {
-                        border:1px solid $color-5-light-grey;
-                        border-radius: 3px;
-
-                        padding: 10px;
-                        width:90%;
-
-                        .yandex_title {
-                            margin:$m-0-5;
-                            text-align:center;
-                            font-weight: $font-w-700;
-                        }
-
-                        .yandex_logo {
-                            margin: $m-0-3 auto;
-                            display:block;
-                            justify-content: center;
-                            
-                        }
-                        
-                    }
+                 
                 }
             }
         }
@@ -119,10 +39,7 @@
                         @include transition();
                         color: $color-middle-blue;
                     }
-
                 }
-
-                
             }
         }
         
@@ -138,25 +55,8 @@
                         @include transition();
                         color: $color-middle-blue;
                     }
-
-                    .payment_title {
-                        color: $color-3-light-grey;
-                        
-                    }
-
-                    .payment_type {
-                        margin: $m-0-3;
-
-                        &:hover {
-                            @include transition();
-
-                            transform: translateY(-5px);
-                            
-                        }
-                    }
                 }
             }
-            
         }
 
         &__column4 {
@@ -171,40 +71,8 @@
                         @include transition();
                         color: $color-middle-blue;
                     }
-
-                    .phone {
-                        color: $color-dark-grey;
-                        font-weight: $font-w-700;
-                        font-size: $font-24;
-                    }
-
-                    .icon_block {
-                        float: left;
-                        background: $color-white;
-                        border-radius: 5px;
-                        width: 36px;
-                        height: 36px;
-                        margin: $m-0-5 $m-0-5 $m-1 0;
-                        
-
-
-                        .social_icon {
-                           display: block;
-                           margin: 10px auto;
-
-                           &:hover {
-                                @include transition();
-                                transform: translateY(-4px);
-
-                           }
-                           
-                        }
-
-                    }
-                   
                 }
             }
-            
         }
     }
 
@@ -250,7 +118,6 @@
                 }
             }
         }
-
     }
 }
  
@@ -260,9 +127,155 @@
     font-size: $font-20;
     font-weight: $font-w-700;
     margin-bottom: $m-2;
+}
+
+//Column_1
+.logo-footer {
+    float:left;
+    margin: $m-1;
+    width: 100%;
     
+    &__icon {
+        margin: $m-1;
+        margin-left:-5px;
+
+        &_img {
+            background-image: url('../img/icons/logo_round.png');
+            background-repeat: no-repeat;
+            padding: $p-0-5;
+            float: left;
+
+        }
+    }
+
+    &__title {
+
+        &_name {
+            font-size: $font-20;
+            font-weight: $font-w-400;
+            margin: $m-0-5;
+            margin-top: 20px;
+            margin-left: -12px;
+            padding: $p-0-3;
+
+        }
+
+        &_description {
+            font-size: $font-6;
+            color:$color-3-dark-blue;
+            margin: $m-0-5;
+            margin-top: -14px;
+            margin-left: -12px;
+            padding: $p-0-3;
+        }
+    }
+}
+
+// contacts (adress, time, e-mail)
+.contacts-footer {
+
+    &__icon {
+        float:left;
+        margin:$m-0-3;
+        margin-top: -2px;
+    }
+
+    &__contact {
+        margin:$m-1;
+
+        & a:hover {
+            @include transition();
+            color: $color-middle-blue;
+        }
+    }
+}
+
+// Yandex block
+.footer__yandex {
+    border:1px solid $color-5-light-grey;
+    border-radius: 3px;
+
+    padding: 10px;
+    margin:$m-1;
+
+    width:90%;
+
+    &_title {
+        margin:$m-0-5;
+        text-align:center;
+        font-weight: $font-w-700;
+    }
+
+    &_logo {
+        margin: $m-0-3 auto;
+        display:block;
+        justify-content: center;
+        
+    }
     
 }
+
+//Column 3
+.payment {
+
+    &__title {
+        color: $color-3-light-grey;
+        
+    }
+
+    &__type {
+        margin: $m-0-3;
+    
+        &:hover {
+            @include transition();
+    
+            transform: translateY(-5px);
+            
+        }
+    }
+
+}
+
+//Column 4
+
+// Phone number
+.phone {
+
+    &__link {
+        color: $color-dark-grey;
+        font-weight: $font-w-700;
+        font-size: $font-24;
+    }
+}
+
+.social-footer {
+
+    &__icon {
+        float: left;
+        background: $color-white;
+        border-radius: 5px;
+        width: 36px;
+        height: 36px;
+        margin: $m-0-5 $m-0-5 $m-1 0;
+
+        &_img {
+            display: block;
+            margin: 10px auto;
+
+            &:hover {
+                @include transition();
+                transform: translateY(-4px);
+
+            }
+        }
+    }
+}
+
+
+
+
+
+
 
 
 

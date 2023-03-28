@@ -32,21 +32,13 @@
                         cursor: pointer;
                         
                     }
-
-                    .point_icon {
-
-                        &:hover {
-                            @include transition();
-                            transform: translateY(-5px);
-                        }
-                    }
                 }
             }
 
             &_nav {
                 @include flex();
                
-                &--list{
+                &--list {
                     margin: $m-0-3;
                     padding: $p-0-3;
 
@@ -67,15 +59,6 @@
                 &--list {
                     margin: $m-0-3;
                     padding: $p-0-3;
-
-                    .header_social {
-
-                        &:hover {
-                            @include transition();
-
-                            transform: translateY(-5px);
-                        }
-                    }
 
                 }
             }
@@ -113,11 +96,9 @@
                         margin: $m-0-3;
                         padding: $p-0-3;
                     }
-                    
                 }
             }
         }
-
     }
 
     &-bottom {
@@ -131,17 +112,6 @@
 
             padding:$p-1;
 
-            &_logo {
-                
-                .logo_icon_centr {
-    
-                    background-image: url('../img/icons/logo_round.png');
-                    background-repeat: no-repeat;
-                    padding: $p-0-3;
-                                 
-                }
-            }
-
             &_title {
                 margin-left: -50px;
                                 
@@ -153,7 +123,6 @@
                     font-size: $font-6;
                     color:$color-3-dark-blue;
                 }
-                
             }
 
             &_search {
@@ -168,13 +137,6 @@
 
                     background-color: $color-8-light-grey;
                 }
-
-                .search_icon {
-                   margin-left: -30px;
-                                                     
-                }
-                
-               
             }
 
             &_function {
@@ -182,16 +144,6 @@
 
                 &--list {
                    margin:$m-1;
-
-                   .func_icon {
-
-                        &:hover {
-                            @include transition();
-                            transform: translateY(-5px);
-                        }
-
-                   }
-
                 }
             }
         }
@@ -221,12 +173,64 @@
 
                         font-weight:$font-w-500;
                     }
-                   
                 }
             }
         }
     }
-    
+}
+
+// marker place
+.point_icon {
+
+    &:hover {
+        @include transition();
+        transform: translateY(-5px);
+    }
+}
+
+// Social contacts icons
+.social {
+
+    &__list {
+
+        &_icon {
+
+            &:hover {
+                @include transition();
+        
+                transform: translateY(-5px);
+            }
+        }
+    }
+}
+
+//Logo company
+.logo_icon_centr {
+    background-image: url('../img/icons/logo_round.png');
+    background-repeat: no-repeat;
+    padding: $p-0-3;
+                 
+}
+
+//search icon lupa
+.search_icon {
+    margin-left: -30px;
+                                      
+}
+
+// functions icons
+.functions__lists {
+
+    &_list {
+
+        &--icon {
+
+            &:hover {
+                @include transition();
+                transform: translateY(-5px);
+            }
+        }
+    }
 }
 
 //Всплавающее меню
