@@ -72,6 +72,30 @@
    
 }
 
+//button for form
+.btn_submit {
+    float:left;
+
+    font-size: $font-14;
+    font-weight: $font-w-500;
+    line-height: 18px;
+    
+    color: $color-white;
+
+    background-color: $color-dark-blue;
+
+    padding: $p-1;
+    margin: $m-1;
+
+    &:hover {
+        @include transition();
+
+        transform: translateY('-5px');
+
+    }
+
+}
+
 .btns {
     @include transition();
     
@@ -118,5 +142,13 @@
             }
     
         }
+    }
+
+    .swiper-button-prev {
+        margin-left: -10px;
+    }
+
+    .swiper-button-next {
+        margin-right: -10px;
     }
 

@@ -5,11 +5,28 @@
     flex-wrap: wrap;
   }
   
-  @mixin transition {
-    transition: all .3s;
-  }
+@mixin flex_e() {
+  display: flex;
+  justify-content: space-evenly;  
+  align-items: center;
+  flex-wrap: wrap;
+}
 
-  @mixin container {
-    max-width: 1440px;
-    margin: 0 auto;
-  }
+@mixin transition {
+  transition: all .3s;
+}
+
+@mixin container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+@mixin input {
+  padding: $p-1;
+  margin: $m-1;
+
+  background-color: $color-5-light-grey;
+  border: 1px solid $color-4-light-grey;
+  border-radius: 5px;
+  
+}

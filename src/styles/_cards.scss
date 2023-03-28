@@ -1,13 +1,16 @@
 //Card of popular categories section
 .card {
-    @include flex();
+    @include flex_e();
     margin-top:$m-4;
+    
        
     &__popular {
         width: calc(100%/5);
         border: 1px solid $color-5-light-grey;
         align-items: center;
         padding: 25px 20px;
+        
+        background-color: $color-white;
 
         &:hover {
             @include transition();
@@ -80,7 +83,7 @@
         width: 270px;
         height: 98px;
     
-        padding: 25px 30px;
+        padding: 11px 30px;
            
         background-color: $color-7-light-grey;
         border-radius: 5px;
@@ -92,6 +95,9 @@
             cursor: pointer;
         }
 
+        &_image img {
+            padding-bottom: $p-1;
+        }
 
         &_title {
             font-weight: $font-w-500;
@@ -99,34 +105,46 @@
             color: $color-light-grey;
 
         }
+
+        &_link {
+            font-weight: $font-w-700;
+            font-size: $font-18;
+            color: $color-light-grey;
+
+            &:hover {
+                color: $color-middle-blue;
+            }
+        }
      
     }
 
     &__goods {
-        @include flex();
+        @include flex_e();
+        margin: 0 auto;
 
-        width: 376px;
+        
+        width: calc(100%/3.3);
         height: 325px;
         box-shadow: 0px 5px 20px rgba(63, 66, 69, 0.05);
         border-radius: 5px;
 
         background: $color-white;
         
-        margin: $m-1 $m-2 $m-1 $m-2;
+        margin: $m-1;
        
-        //width: calc(100%/3);
+        
         
         &_img {
            height: 70px;
            width: 70px;
            border-radius: 10px;
            margin-left: $m-2;
-           margin-bottom:$m-10;
+           margin-bottom: $m-15;
            
         }
 
         &_lists {
-            margin-right: $m-2;
+            margin-right: $m-1;
 
             &--list {
                 padding:$p-0-5;
@@ -168,6 +186,7 @@
             font-size: $font-16;
             margin: $m-0-5;
             text-align: center;
+            
         }
 
         &_stars {
@@ -190,14 +209,14 @@
     &__counters {
         @include flex();
        
-        &_title {
-            margin: $m-1;
+        &_title a {
+            margin: $m-0-5;
             color: $color-5-light-grey;
 
             font-size: $font-20;
             font-weight: $font-w-500;
 
-            & a:hover {
+            &:hover {
                 @include transition();
 
                 color: $color-middle-blue;
@@ -209,13 +228,13 @@
         }
         
         &_counter {
-            margin: $m-1;
-            padding-top:$p-0-5;
+            margin: $m-0-5;
+            padding-top: $p-0-5;
         }
 
         &_devider {
             color: $color-5-light-grey;
-            margin: $m-2;
+            margin: $m-0-3;
         }
         
 
@@ -223,6 +242,11 @@
     }
 
 
+}
+
+//background card white
+.card_bg {
+    background-color: $color-white;
 }
 
 

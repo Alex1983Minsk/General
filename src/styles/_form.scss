@@ -1,0 +1,67 @@
+.form-catalog {
+
+    &__block {
+
+        &_title {
+            font-size: $font-32;
+            font-weight: $font-w-700;
+            line-height: 46px;
+
+            color: $color-dark-grey;
+
+            margin: $m-1;
+        }
+
+        &_description {
+            font-size: $font-14;
+            font-weight: $font-w-500;
+            line-height: 18px;
+            
+            color: $color-light-grey;
+
+            margin: $m-1;
+
+        }
+
+        &_name {
+            @include input();
+            width: 43.5%;
+        }
+
+        &_phone {
+            @include input();
+            width: 43.5%;
+        }
+
+        &_email {
+            @include input();
+            width: 93.5%;
+        }
+
+        &_message {
+            @include input();
+            height: 120px;
+            width: 93.5%;
+        }
+
+        &_message {
+            @include input();
+            height: 120px;
+            width: 93.5%;
+
+        }
+
+        &_info {
+            font-size: $font-14;
+            font-weight: $font-w-500;
+            line-height: 18px;
+            
+            color: $color-light-grey;
+
+            margin: $m-1;
+
+        }
+
+    }
+
+}
