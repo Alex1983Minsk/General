@@ -23,14 +23,379 @@
 </head>
 <body>
     <header class="header">
-
+        <div class="header-top">
+            <div class="header-top__block">
+                <ul class="header-top__block_region">
+                    <li class="header-top__block_region--list">
+                        <img src="../img/icons/point.png" alt="region" class="point_icon"></li>
+                    <li class="header-top__block_region--list">Москва</li>
+                </ul>
+                <ul class="header-top__block_nav">
+                    <li class="header-top__block_nav--list"><a href="./about.html">О компании</a></li>
+                    <li class="header-top__block_nav--list"><a href="./delivery.html">Доставка</a></li>
+                    <li class="header-top__block_nav--list"><a href="./payment.html">Оплата</a></li>
+                    <li class="header-top__block_nav--list"><a href="./actions.html">Акции</a></li>
+                    <li class="header-top__block_nav--list"><a href="#">Распродажа</a></li>
+                    <li class="header-top__block_nav--list">
+                        <div class="dropdown">
+                            <button onclick="myFunction()" class="dropbtn">Еще</button>
+                            <div id="myDropdown" class="dropdown-content">
+                                <a href="./vacancy.html">Вакансии</a>
+                                <a href="./guarantee.html">Гарантии</a>
+                                <a href="./blog.html">Блог</a>
+                                <a href="#">Для юр. лиц</a>
+                                <a href="#">Отзывы</a>
+                                <a href="./contacts.html">Контакты</a>
+                            </div>
+                        </div>  
+                    </li>
+                </ul>
+                <ul class="header-top__block_contacts social">
+                    <li class="header-top__block_contacts--list social__list">
+                        <a href="#"><img src="../img/icons/telegram.png" alt="telegram" class="social__list_icon"></a>
+                    </li>
+                    <li class="header-top__block_contacts--list social__list">
+                        <a href="#" ><img src="../img/icons/viber.png" alt="viber" class="social__list_icon"></a>
+                    </li>
+                    <li class="header-top__block_contacts--list social__list">
+                        <a href="#" ><img src="../img/icons/whatsapp.png" alt="whatsapp" class="social__list_icon"></a>
+                    </li>
+                    <li class="header-top__contacts_list social__lists">
+                        <a href="tel:+74952150744">+7 495 215 0744</a>
+                    </li>
+                </ul>
+                <ul class="header-top__block_mail">
+                    <li class="header-top__block_mail--list">
+                        <img src="../img/icons/mail.png" alt="mail">
+                    </li>
+                    <li class="header-top__block_mail--list">
+                        <a href="mailto:sales@tele-optics.ru">sales@tele-optics.ru</a>
+                    </li>
+                
+                </ul>
+                <ul class="header-top__block_user">
+                    <li class="header-top__block_user--list">
+                        <img src="../img/icons/user.png" alt="user">
+                    </li>
+                    <li class="header-top__block_user--list">
+                        <a href="#">Вход / Регистрация</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="header-bottom">
+            <div class="header-bottom__block">
+                <div class="header-bottom__block_logo">
+                    <img src="../img/icons/logo.png" class="header-bottom__block_logo--img logo_icon_centr" alt="logo">
+                </div>
+                <div class="header-bottom__block_title">
+                    <h1 class="header-bottom__block_title--name"><span style="font-weight: bold;">Tele</span>-Optics</h1>
+                    <h3 class="header-bottom__block_title--description">МАГАЗИН ОПТИЧЕСКИХ ПРИБОРОВ</h3>
+                </div>
+                <div class="header-bottom__block_search">
+                    <input type="text" name="search" class="header-bottom__block_search--input" placeholder="Введите название: Бинокль армейский">
+                    <img src="../img/icons/search.png"  class="header-bottom__block_search--img search_icon" alt="search">
+                </div>
+                <ul class="header-bottom__block_function functions__lists">
+                    <li class="header-bottom__block_function--list functions__lists_list">
+                        <a href="#"><img src="../img/icons/eye.png" alt="view" class="functions__lists_list--icon"><span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">0</span></a>
+                    </li>
+                    <li class="header-bottom__block_function--list functions__lists_list">
+                        <a href="#"><img src="../img/icons/scales.png" alt="scales" class="functions__lists_list--icon"><span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">0</span></a>
+                    </li>
+                    <li class="header-bottom__block_function--list functions__lists_list">
+                        <a href="#"><img src="../img/icons/heart.png" alt="heart" class="functions__lists_list--icon"><span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">6</span></a>
+                    </li>
+                    <li class="header-bottom__block_function--list functions__lists_list">
+                        <a href="./pages/basket.html"><img src="../img/icons/basket.png" alt="basket" class="functions__lists_list--icon"><span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">7</span></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="header-nav">
+            <div class="header-nav__block">
+                <ul class="header-nav__block_lists">
+                    <li class="header-nav__block_lists--list"><a href="#">Телескопы</a></li>
+                    <li class="header-nav__block_lists--list"><a href="#">Бинокли</a></li>
+                    <li class="header-nav__block_lists--list"><a href="#">Лупы</a></li>
+                    <li class="header-nav__block_lists--list"><a href="#">Микроскопы</a></li>
+                    <li class="header-nav__block_lists--list"><a href="#">Зрительные трубы</a></li>
+                    <li class="header-nav__block_lists--list"><a href="#">Монокуляры</a></li>
+                    <li class="header-nav__block_lists--list"><a href="#">Прицелы</a></li>
+                    <li class="header-nav__block_lists--list"><a href="#">Дальномеры</a></li>
+                    <li class="header-nav__block_lists--list"><a href="#">Тепловизоры</a></li>
+                </ul>
+            </div>
+        </div>
     </header>
     <main class="main">
-        
+        <section class="section section11 bg_white">
+            <div class="section__container">
+                <div class="section__container_top">
+                    <div class="section__container_top--title">Корзина</div>
+                </div>
+                <ul class="section__container_lists border">
+                    <li class="section__container_lists--list basket">
+                        <a href="#"><img src="../img/icons/big_basket.png" class="basket__img" alt="basket"></a>
+                        <h1 class="basket__title">Ваша корзина пуста</h1>
+                        <button class="btn_submit basket__btn">Продолжить покупки</button>
+                    </li>
+                </ul>
+            </div>
+        </section>
+     <!-- Form and Map -->
+        <section class="section section5 bg-white">
+            <div class="section__container">
+                <ul class="section__container_lists">
+                    <li class="section__container_lists--list form-catalog">
+                        <form action="" method="POST" class="form-catalog__block">
+                            <div class="form-catalog__block_title">
+                                Вам нужна консультация?
+                            </div>
+                            <div class="form-catalog__block_description">
+                                Задайте их по телефону +7 (000) 000-000-00<br> или оставьте свои координаты и наш менеджер<br> перезвонит вам через 10 минут.
+                            </div>
+                            <input type="text" class="form-catalog__block_name" placeholder="Ваше Имя">
+                            <input type="text" class="form-catalog__block_phone" placeholder="Ваш Телефон">
+                            <br>
+                            <input type="text" class="form-catalog__block_email" placeholder="Ваш E-mail">
+                            <br>
+                            <textarea class="form-catalog__block_message" placeholder="Ваш Вопрос"></textarea>
+                            <button type="submit" class="btn_submit">Оставить заявку</button>
+                            <div class="form-catalog__block_info">
+                                Нажимая «Оставить заявку», я соглашаюсь c<br> обработкой персональных данных на<br>условиях Политики конфиденциальности.
+                            </div>
+                        </form>
+                    </li>
+                    <li class="section__container_lists--list map">
+                        <img src="../img/contacts/map.png" alt="map" class="map__img">
+                    </li>
+                </ul>
+                
+            </div>
+        </section>
+        <!-- counters -->
+        <section class="section section9">
+            <div class="section__container">
+                <ul class="section__container_lists">
+                    <li class="section__container_lists--list card__counters" >
+                        <div class="card__counters_img">
+                            <img src="../img/icons/eye.png" alt="eye">
+                        </div>
+                        <div class="card__counters_title"><a href="#">Просмотренные</a></div>
+                        <div class="card__counters_counter">
+                            <img src="../img/icons/zero_count.png" alt="counter">
+                        </div>
+                    </li>
+                    <li class="section__container_lists--list card__counters" >
+                        <div class="card__counters_devider">|</div>
+                    </li>
+                    <li class="section__container_lists--list card__counters">
+                        
+                        <div class="card__counters_img">
+                            <img src="../img/icons/scales.png" alt="scales">
+                        </div>
+                        <div class="card__counters_title"><a href="#">Сравнение товаров</a></div>
+                        <div class="card__counters_counter">
+                            <img src="../img/icons/zero_count.png" alt="counter">
+                        </div>
+                    </li>
+                    <li class="section__container_lists--list card__counters" >
+                        <div class="card__counters_devider">|</div>
+                    </li>
+                    <li class="section__container_lists--list card__counters">
+                        <div class="card__counters_img">
+                            <img src="../img/icons/heart.png" alt="heart">
+                        </div>
+                        <div class="card__counters_title"><a href="#">Избранное</a></div>
+                        <div class="card__counters_counter">
+                            <img src="../img/icons/zero_count.png" alt="counter">
+                        </div>
+                        
+                    </li>
+                    <li class="section__container_lists--list card__counters" >
+                        <div class="card__counters_devider">|</div>
+                    </li>
+                    <li class="section__container_lists--list card__counters">
+                        <div class="card__counters_img">
+                            <img src="../img/icons/basket_grey.png" alt="basket">
+                        </div>
+                        <div class="card__counters_title"><a href="#">Корзина</a></div>
+                        <div class="card__counters_counter">
+                            <img src="../img/icons/7.png" alt="counter">
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
     </main>
+        
     <footer class="footer">
-
+        <div class="footer-block">
+            <div class="footer-block__column1">
+                <ul class="footer-block__column1_lists">
+                    <li class="footer-block__column1_lists--list logo-footer">
+                        <div class="logo-footer__icon">
+                            <img src="../img/icons/logo.png" class="logo-footer__icon_img" alt="logo">
+                        </div>
+                        <div class="logo-footer__title">
+                            <h1 class="logo-footer__title_name"><span style="font-weight: bold;">Tele</span>-Optics</h1>
+                            <h3 class="logo-footer__title_description">МАГАЗИН ОПТИЧЕСКИХ ПРИБОРОВ</h3>
+                        </div>       
+                    </li>
+                    <li class="footer-block__column1_lists--list contacts-footer">
+                        <img class="contacts-footer__icon"src="../img/icons/point2.png" alt="region">
+                        <p class="contacts-footer__contact">
+                            Россия, г. Москва,<br>ул. Никольская, д. 15
+                        </p>
+                    </li>
+                    <li class="footer-block__column1_lists--list contacts-footer">
+                        <img class="contacts-footer__icon" src="../img/icons/clocks.png" alt="region">
+                        <p class="contacts-footer__contact">
+                            Пн-Пт с 09.00-19.00,<br>Сб-Вс - выходной
+                        </p>
+                    </li>
+                    <li class="footer-block__column1_lists--list contacts-footer">
+                        <img class="contacts-footer__icon" src="../img/icons/mail.png" alt="region">
+                        <p class="contacts-footer__contact">
+                            <a href="mailto:sales@tele-optics.ru">sales@tele-optics.ru</a>
+                        </p>
+                    </li>
+                    <li class="footer-block__column1_lists--list">
+                        <div class="footer__yandex">
+                            <p class="footer__yandex_title">Рейтинг магазина</p>
+                            <div class="stars">
+                                <img src="../img/icons/Star.png" alt="star" class="star">
+                                <img src="../img/icons/Star.png" alt="star" class="star">
+                                <img src="../img/icons/Star.png" alt="star" class="star">
+                                <img src="../img/icons/Star.png" alt="star" class="star">
+                                <img src="../img/icons/Star.png" alt="star" class="star">
+                            </div>
+                            <img src="../img/icons/yandex_market.png" alt="yandex" class="footer__yandex_logo">
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-block__column2">
+                <ul class="footer-block__column2_lists">
+                    <li class="footer-block__column2_lists--list title_footer_menu">Каталог</li>
+                    <li class="footer-block__column2_lists--list"><a href="#">Телескопы</a></li>
+                    <li class="footer-block__column2_lists--list"><a href="#">Монокуляры</a></li>
+                    <li class="footer-block__column2_lists--list"><a href="#">Лупы</a></li>
+                    <li class="footer-block__column2_lists--list"><a href="#">Микроскопы</a></li>
+                    <li class="footer-block__column2_lists--list"><a href="#">Зрительные трубы</a></li>
+                    <li class="footer-block__column2_lists--list"><a href="#">Дальномеры</a></li>
+                    <li class="footer-block__column2_lists--list"><a href="#">Тепловизоры</a></li>
+                    <li class="footer-block__column2_lists--list"><a href="#">Приборы ночного<br>видения</a></li>
+                </ul> 
+            </div>
+            <div class="footer-block__column3">
+                <ul class="footer-block__column3_lists">
+                    <li class="footer-block__column3_lists--list title_footer_menu">Полезная информация</li>
+                    <li class="footer-block__column3_lists--list"><a href="./delivery.html">Доставка</a></li>
+                    <li class="footer-block__column3_lists--list"><a href="./payment.html">Оплата</a></li>
+                    <li class="footer-block__column3_lists--list"><a href="#">Возврат</a></li>
+                    <li class="footer-block__column3_lists--list"><a href="#">Производители</a></li>
+                    <li class="footer-block__column3_lists--list"><a href="./guarantee.html">Гарантии</a></li>
+                    <li class="footer-block__column3_lists--list"><a href="./articles.html">Статьи</a></li>
+                    <li class="footer-block__column3_lists--list paymant">
+                        <p class="payment__title">Способы оплаты:</p>
+                    </li>
+                    <li class="footer-block__column3_lists--list paymant">
+                        <a href="#"><img src="../img/icons/wallet.png" alt="wallet" class="payment__type"></a>
+                        <a href="#"><img src="../img/icons/visa.png" alt="visa" class="payment__type"></a>
+                        <a href="#"><img src="../img/icons/mastercard.png" alt="mastercard" class="payment__type"></a>
+                        <a href="#"><img src="../img/icons/mastercard_second.png" alt="mastercard2" class="payment__type"></a>
+                    </li>
+                    <li class="footer-block__column3_lists--list paymant">
+                        <a href="#"><img src="../img/icons/mir.png" alt="mir" class="payment__type"></a>
+                        <a href="#"><img src="../img/icons/green_pay.png" alt="green_pay" class="payment__type"></a>
+                        <a href="#"><img src="../img/icons/vo.png" alt="vo" class="payment__type"></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-block__column4">
+                <ul class="footer-block__column4_lists">
+                    <li class="footer-block__column4_lists--list title_footer_menu">Контакты</li>
+                    <li class="footer-block__column4_lists--list phone">
+                        <a href="tel:+74952150744" class="phone__link">+7 495 215 0744</a></li>
+                    <li class="footer-block__column4_lists--list social-footer">
+                        <div class="social-footer__icon">
+                            <a href="#"><img src="../img/icons/VK_footer.png" alt="vk" class="social-footer__icon_img"></a>
+                        </div>
+                        <div class="social-footer__icon">
+                            <a href="#"><img src="../img/icons/TG_footer.png" alt="telegram" class="social-footer__icon_img"></a>
+                        </div>
+                        <div class="social-footer__icon">
+                            <a href="#"><img src="../img/icons/VB_footer.png" alt="viber" class="social-footer__icon_img"></a>
+                        </div>
+                        <div class="social-footer__icon">
+                            <a href="#"><img src="../img/icons/WA_footer.png" alt="whatsapp" class="social-footer__icon_img"></a>
+                        </div>
+                    </li>
+                    <li class="footer-block__column4_lists--list no_flex" ><a href="./pages/about.html" >О нас</a></li>
+                    <li class="footer-block__column4_lists--list"><a href="#">Оптовые продажи</a></li>
+                    <li class="footer-block__column4_lists--list"><a href="#">Личный кабинет</a></li>
+                    <li class="footer-block__column4_lists--list">
+                        <a href="#"><button class="btn_news">Подписаться на новости</button></a>
+                    </li>
+                    <li class="footer-block__column4_lists--list">
+                        <a href="#"><button class="btn_price">Скачать прайс-лист</button></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="footer-rights">
+            <div class="footer-rights__block">
+                <div class="footer-rights__block_rights">
+                    <p class="footer-rights__block_rights--item">
+                        &#169; 2022 Бинокль. Все права защищены.
+                    </p>
+                </div>
+                <div class="footer-rights__block_politics">
+                    <a href="#" class="footer-rights__block_politics--item">
+                        Политика конфиденциальности
+                    </a>
+                    <a href="#" class="footer-rights__block_politics--item">
+                        Условия соглашения
+                    </a>
+                </div>
+                <div class="footer-rights__block_sitemap">
+                    <a href="#" class="footer-rights__block_sitemap--item">
+                        Карта сайта
+                    </a>
+                </div>
+            </div>
+        </div>
     </footer>
+    
+        <!-- Modal -->
+    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi suscipit, odio laborum nam tenetur ipsam praesentium molestias officiis error! Iste eaque molestiae veritatis quidem quis error adipisci. Consequuntur magni officia molestias facilis vitae. Placeat tempora vitae repellat ab quis, nisi quos, consequatur possimus saepe beatae dolore incidunt neque numquam voluptate?
+            </div>
+          </div>
+        </div>
+      </div>
+    
+        
+
+    
+
+    <!--Up to start-->
+    <div class="btns btns__add btns__up btns__up_hide">UP</div>
+    
+    <!--Button trigger modal-->
+    <a class="btns btns_add" data-toggle="modal" data-target="#exampleModalCenter">Modal</a>
     
     <!-- Bootstrap script -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
@@ -41,5 +406,13 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 
     <script type="module" src="../js/swiper.js"></script>
+
+    <!-- Scroll Up -->
+    <script type="module" src="../js/scroll_up.js"></script>
+    <!-- Modal -->
+    <script type="module" src="../js/modal.js"></script>
+      
+    <!-- Open menu -->
+    <script src="../js/menu.js"></script>
 </body>
 </html>

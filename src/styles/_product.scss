@@ -1,0 +1,73 @@
+.product {
+
+    &__img {
+
+        &_image {
+
+
+        }
+    }
+
+    &__info {
+
+        &_lists {
+
+            &--title {
+                font-size: $font-32;
+                font-weight: $font-w-700;
+                
+                margin: $m-2 0;
+
+            }
+
+            &--stars {
+                font-size: $font-16;
+                font-weight: $font-w-500;
+                
+                margin: $m-1 0;
+
+            }
+
+            &--nalichie {
+                font-size: $font-16;
+                font-weight: $font-w-500;
+
+                color: $color-green;
+                
+                margin: $m-1 0;
+
+            }
+
+            &--options {
+                font-size: $font-18;
+                font-weight: $font-w-700;
+
+                margin: $m-1 0;
+
+            }
+
+            &--option {
+                font-size: $font-16;
+                font-weight: $font-w-400;
+
+                color: $color-3-light-grey;
+
+                margin: $m-1 0;
+
+                & a {
+                    border-bottom: 1px solid $color-middle-blue;
+
+                    color: $color-middle-blue;
+
+                    &:hover {
+                        border-bottom: 3px solid $color-middle-blue;
+
+                        font-weight: $font-w-700;
+                    }
+                }
+
+            }
+        }
+    }
+}
+
