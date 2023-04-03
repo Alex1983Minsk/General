@@ -1,8 +1,25 @@
 .slider-top {
     width: 876px;
     padding: $p-0-5;
-   
+
     margin: 0 auto;
+
+    @media screen and (max-width:1200px) {
+        width: 776px;
+        
+    }          
+    @media screen and (max-width:992px) {
+        width: 576px;
+        
+    }
+    @media screen and (max-width:768px) {
+        width: 476px;
+        
+    }
+    @media screen and (max-width:576px) {
+        width: 356px;
+        
+    }
 
     &__area {
         margin: $m-1;
@@ -14,6 +31,29 @@
                 border-radius: 10px;
                 width: 876px;
                 height: 415px;
+                
+
+                @media screen and (max-width:1200px) {
+                    width: 776px;
+                    height: 375px;
+                    border-radius: 10px;
+                }          
+                @media screen and (max-width:992px) {
+                    width: 576px;
+                    height: 345px;
+                    border-radius: 8px;
+                }
+                @media screen and (max-width:768px) {
+                    width: 476px;
+                    height: 315px;
+                    border-radius: 6px;
+                }
+                @media screen and (max-width:576px) {
+                    width: 356px;
+                    height: 295px;
+                    border-radius: 5px;
+                    
+                }
             }
         }
     }

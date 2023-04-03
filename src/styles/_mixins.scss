@@ -20,6 +20,22 @@
   max-width: 1440px;
   margin: 0 auto;
 }
+@mixin container_1200 {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+@mixin container_992 {
+  max-width: 992px;
+  margin: 0 auto;
+}
+@mixin container_768 {
+  max-width: 768px;
+  margin: 0 auto;
+}
+@mixin container_576 {
+  max-width: 576px;
+  margin: 0 auto;
+}
 
 @mixin input {
   padding: $p-1;

@@ -64,16 +64,52 @@ body {
   }
 
 .map {
-
+    
     &__img {
         margin: $m-2;
         padding: $p-2;
+
+        
+    @media screen and (max-width:1200px) {
+        margin: $m-0-5;
+        padding: $p-0-5;
+        width: 100%;
+    }
+    @media screen and (max-width:992px) {
+        margin: $m-0-5;
+        padding: $p-0-5;
+        width: 100%;
+    }
+    @media screen and (max-width:768px) {
+        margin: $m-0-5;
+        padding: $p-0-5;
+        width: 100%;
+    }
+    @media screen and (max-width:576px) {
+        margin: $m-0-5;
+        padding: $p-0-5;
+        width: 100%;
+    }
+
     }
 }
 
 .basket {
     padding: $p-4;
     margin: 0 auto;
+
+    @media screen and (max-width:1200px) {
+        padding: $p-4;
+    }
+    @media screen and (max-width:992px) {
+        padding: $p-3;
+    }
+    @media screen and (max-width:768px) {
+        padding: $p-2;
+    }
+    @media screen and (max-width:576px) {
+        padding: $p-1;
+    }
 
 
     &__img {

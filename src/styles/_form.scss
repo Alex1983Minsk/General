@@ -44,13 +44,6 @@
             width: 93.5%;
         }
 
-        &_message {
-            @include input();
-            height: 120px;
-            width: 93.5%;
-
-        }
-
         &_info {
             font-size: $font-14;
             font-weight: $font-w-500;
@@ -59,6 +52,19 @@
             color: $color-light-grey;
 
             margin: $m-1;
+
+            @media screen and (max-width:1200px) {
+                display: none;
+            }
+            @media screen and (max-width:992px) {
+                display: none;
+            }
+            @media screen and (max-width:768px) {
+                display: none;
+            }
+            @media screen and (max-width:576px) {
+                display: none;
+            }
 
         }
 

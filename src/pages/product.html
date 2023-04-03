@@ -32,10 +32,9 @@
                 </ul>
                 <ul class="header-top__block_nav">
                     <li class="header-top__block_nav--list"><a href="./about.html">О компании</a></li>
-                    <li class="header-top__block_nav--list"><a href="./delivery.html">Доставка</a></li>
-                    <li class="header-top__block_nav--list"><a href="./payment.html">Оплата</a></li>
-                    <li class="header-top__block_nav--list"><a href="./actions.html">Акции</a></li>
-                    <li class="header-top__block_nav--list"><a href="#">Распродажа</a></li>
+                    <li class="header-top__block_nav--list closed_menu"><a href="./delivery.html">Доставка</a></li>
+                    <li class="header-top__block_nav--list closed_menu"><a href="./payment.html">Оплата</a></li>
+                    <li class="header-top__block_nav--list closed_menu"><a href="./actions.html">Акции</a></li>
                     <li class="header-top__block_nav--list">
                         <div class="dropdown">
                             <button onclick="myFunction()" class="dropbtn">Еще</button>
@@ -78,7 +77,7 @@
                         <img src="../img/icons/user.png" alt="user">
                     </li>
                     <li class="header-top__block_user--list">
-                        <a href="#">Вход / Регистрация</a>
+                        <a href="#">Вход/Регистрация</a>
                     </li>
                 </ul>
             </div>
@@ -87,14 +86,12 @@
             <div class="header-bottom__block">
                 <div class="header-bottom__block_logo">
                     <img src="../img/icons/logo.png" class="header-bottom__block_logo--img logo_icon_centr" alt="logo">
-                </div>
-                <div class="header-bottom__block_title">
-                    <h1 class="header-bottom__block_title--name"><span style="font-weight: bold;">Tele</span>-Optics</h1>
-                    <h3 class="header-bottom__block_title--description">МАГАЗИН ОПТИЧЕСКИХ ПРИБОРОВ</h3>
+                    <h1 class="header-bottom__block_logo--name"><span style="font-weight: bold;">Tele</span>-Optics</h1>
+                    <br>
+                    <h3 class="header-bottom__block_logo--description ">МАГАЗИН ОПТИЧЕСКИХ ПРИБОРОВ</h3>
                 </div>
                 <div class="header-bottom__block_search">
                     <input type="text" name="search" class="header-bottom__block_search--input" placeholder="Введите название: Бинокль армейский">
-                    <img src="../img/icons/search.png"  class="header-bottom__block_search--img search_icon" alt="search">
                 </div>
                 <ul class="header-bottom__block_function functions__lists">
                     <li class="header-bottom__block_function--list functions__lists_list">
@@ -108,6 +105,7 @@
                     </li>
                     <li class="header-bottom__block_function--list functions__lists_list">
                         <a href="./pages/basket.html"><img src="../img/icons/basket.png" alt="basket" class="functions__lists_list--icon"><span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">7</span></a>
+                        
                     </li>
                 </ul>
             </div>
@@ -130,7 +128,7 @@
     </header>
     <main class="main">
         <!-- Product block -->
-        <section class="section section3 bg_white">
+        <section class="section bg_white">
             <div class="section__container">
                 <ul class="section__container_lists product">
                     <li class="section__container_lists--list product__img">
@@ -167,17 +165,54 @@
                             <li class="product__info_lists--option">
                                 <p>Назначение - <b>охота и рыбалка</b></p>
                             </li>
+                            <li class="product__info_lists--price">
+                                12 700 &#8381; <span class="old_price">15 250 &#8381;</span>
+                            </li>
+                            <li class="product__info_lists--option">
+                                <button class="btn_basket"><img src="../img/icons/basket_btn.png" alt=""></button>
+                            </li>
                             <li class="product__info_lists--option">
                                 <a href="#">Все характеристики</a>
+                            </li>
+                            <li class="product__info_lists--option">
+                                <button class="btn_price">Заказать доставку</button>
+                                <button class="btn_price">Задать вопрос</button>
+                                <button class="btn_price">Оставить отзыв</button>
+                                <button class="btn_price">Новинки</button>
                             </li>
                         </ul>
                     </li>
                 </ul>
+                <div class="tech__block">
+                    <ul class="tech__block_titles">
+                        <li class="tech__block_titles--title"><a href="#">Описание</a></li>
+                        <li class="tech__block_titles--title"><a href="#">Характеристики</a></li>
+                        <li class="tech__block_titles--title"><a href="#">Комплектация</a></li>
+                        <li class="tech__block_titles--title"><a href="#">Отзывы</a></li>
+                    </ul>
+
+                    <ul class="tech__block_lists">
+                        <li class="tech__block_lists--title">Технические характеристики</li>
+                        <li class="tech__block_lists--item bg_grey">Диаметр объектива, мм - <span class="parametr">50</span></li>
+                        <li class="tech__block_lists--item">Тип призмы - <span class="parametr">porro</span></li>
+                        <li class="tech__block_lists--item bg_grey">Просветляющее покрытие линз - <span class="parametr">Многослойное</span></li>
+                        <li class="tech__block_lists--item">Увеличение, крат - <span class="parametr">3 года</span></li>
+                        <li class="tech__block_lists--item bg_grey">Минимальная дистанция фокусировки, м - <span class="parametr">9</span></li>
+                        <li class="tech__block_lists--item">Диаметр выходного зрачка, мм - <span class="parametr">3</span></li>
+                        <li class="tech__block_lists--item bg_grey">Поле зрения, м/1000 м - <span class="parametr">3.2</span></li>
+                        <li class="tech__block_lists--item">Поле зрения, градусы - <span class="parametr">56</span></li>
+                        <li class="tech__block_lists--item bg_grey">Покрытие корпуса - <span class="parametr">алюминиевый сплав</span></li>
+                        <li class="tech__block_lists--item">Материал корпуса - <span class="parametr">искусственная кожа</span></li>
+                       
+                    </ul>
+
+                </div>
+
 
             </div>
         </section>
         <!-- Section Slider 1-->
-        <section class="section section3 bg_white">
+        <section class="section bg_white">
             <div class="section__container">
                 <div class="section__container_top">
                     <div class="section__container_top--title">Рекомендуем</div>
@@ -441,7 +476,7 @@
         </section>
         
         <!-- Section Slider 2-->
-        <section class="section section3 bg_white">
+        <section class="section bg_white">
             <hr>
             <div class="section__container">
                 <div class="section__container_top">
@@ -706,7 +741,7 @@
         </section>
         
         <!-- Section Slider 3-->
-        <section class="section section3 bg_white">
+        <section class="section bg_white">
             <hr>
             <div class="section__container">
                 <div class="section__container_top">
@@ -970,7 +1005,7 @@
            </div>
         </section>
 
-        <section class="section section4 bg_grey">
+        <section class="section bg_grey">
             <div class="section__container">
                 <div class="section__container_top">
                     <div class="section__container_top--title"><a href="#">Популярные категории</a></div>
@@ -1086,7 +1121,7 @@
         </section>
      </section>
      <!-- Form and Map -->
-     <section class="section section5 bg-white">
+     <section class="section bg-white">
         <div class="section__container">
             <ul class="section__container_lists">
                 <li class="section__container_lists--list form-catalog">
@@ -1118,7 +1153,7 @@
      </section>
 
      <!-- counters -->
-     <section class="section section9">
+     <section class="section bg_counters">
         <div class="section__container">
             <ul class="section__container_lists">
                 <li class="section__container_lists--list card__counters" >
@@ -1234,23 +1269,23 @@
             </div>
             <div class="footer-block__column3">
                 <ul class="footer-block__column3_lists">
-                    <li class="footer-block__column3_lists--list title_footer_menu">Полезная информация</li>
+                    <li class="footer-block__column3_lists--list title_footer_menu">Информация</li>
                     <li class="footer-block__column3_lists--list"><a href="./delivery.html">Доставка</a></li>
                     <li class="footer-block__column3_lists--list"><a href="./payment.html">Оплата</a></li>
                     <li class="footer-block__column3_lists--list"><a href="#">Возврат</a></li>
                     <li class="footer-block__column3_lists--list"><a href="#">Производители</a></li>
                     <li class="footer-block__column3_lists--list"><a href="./guarantee.html">Гарантии</a></li>
                     <li class="footer-block__column3_lists--list"><a href="./articles.html">Статьи</a></li>
-                    <li class="footer-block__column3_lists--list paymant">
+                    <li class="footer-block__column3_lists--list payment">
                         <p class="payment__title">Способы оплаты:</p>
                     </li>
-                    <li class="footer-block__column3_lists--list paymant">
+                    <li class="footer-block__column3_lists--list payment">
                         <a href="#"><img src="../img/icons/wallet.png" alt="wallet" class="payment__type"></a>
                         <a href="#"><img src="../img/icons/visa.png" alt="visa" class="payment__type"></a>
                         <a href="#"><img src="../img/icons/mastercard.png" alt="mastercard" class="payment__type"></a>
                         <a href="#"><img src="../img/icons/mastercard_second.png" alt="mastercard2" class="payment__type"></a>
                     </li>
-                    <li class="footer-block__column3_lists--list paymant">
+                    <li class="footer-block__column3_lists--list payment">
                         <a href="#"><img src="../img/icons/mir.png" alt="mir" class="payment__type"></a>
                         <a href="#"><img src="../img/icons/green_pay.png" alt="green_pay" class="payment__type"></a>
                         <a href="#"><img src="../img/icons/vo.png" alt="vo" class="payment__type"></a>

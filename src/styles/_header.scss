@@ -1,25 +1,51 @@
 .header {
     @include container();
 
+    @media screen and (max-width:1200px) {
+        @include container_1200();
+    }
+    @media screen and (max-width:992px) {
+        @include container_992();
+    }
+    @media screen and (max-width:768px) {
+        @include container_768();
+    }
+    @media screen and (max-width:576px) {
+        @include container_576();
+    }
+
     &-top {
         background-color: $color-8-light-grey;
         
-       
         &__block {
             @include flex();
-
             max-width: 1280px;
             margin: 0 auto;
 
-            font-size: $font-14;
+            font-size: $font-16;
+
+            @media screen and (max-width:1200px) {
+                max-width: 1140px;
+                font-size: $font-14;
+            }
+            @media screen and (max-width:992px) {
+                max-width: 952px;
+                font-size: $font-13;
+            }
+            @media screen and (max-width:768px) {
+                max-width: 738px;
+                font-size: $font-11;
+            }
+            @media screen and (max-width:576px) {
+                max-width: 566px;
+                font-size: $font-10;
+            }
 
             &_region {
                 @include flex();
                
                 &--list {
-                    margin: $m-0-3;
-                    padding: $p-0-3;
-
+                    
                     &:hover {
                         @include transition();
 
@@ -65,7 +91,7 @@
 
             &_mail {
                 @include flex();
-                
+
                 &--list {
                     margin: $m-0-3;
                     padding: $p-0-3;
@@ -78,7 +104,22 @@
                         margin: $m-0-3;
                         padding: $p-0-3;
                     }
+
+                    @media screen and (max-width:1200px) {
+                        display:none;
+                    }
+                    @media screen and (max-width:992px) {
+                        display:none;
+                    }
+                    @media screen and (max-width:768px) {
+                        display:none;
+                    }
+                    @media screen and (max-width:576px) {
+                        display:none;
+                    }
                 }
+
+               
             }
 
             &_user {
@@ -102,6 +143,7 @@
     }
 
     &-bottom {
+
         height:90px;
 
         &__block {
@@ -112,26 +154,91 @@
 
             padding:$p-1;
 
-            &_title {
-                margin-left: -50px;
-                                
+            @media screen and (max-width:1200px) {
+                max-width: 1080px;
+                padding:$p-1;
+            }
+            @media screen and (max-width:992px) {
+                max-width: 892px;
+                padding:$p-1;
+            }
+            @media screen and (max-width:768px) {
+                max-width: 720px;
+                padding:$p-0-7;
+            }
+            @media screen and (max-width:576px) {
+                max-width: 456px;
+                padding:$p-0-5;
+            }
+
+            &_logo {
+                width: 26%;
+               
+                &--img {
+                    float: left;
+                   
+                }
+
                 &--name {
+                    margin-top: 10px;
                     font-size: $font-20;
                     font-weight: $font-w-400;
+
+                    @media screen and (max-width:1200px) {
+                        font-size: $font-18;
+                    }
+                    @media screen and (max-width:992px) {
+                        font-size: $font-16;
+                    }
+                    @media screen and (max-width:768px) {
+                        font-size: $font-14;
+                    }
+                    @media screen and (max-width:576px) {
+                        font-size: $font-12;
+                    }
                 }
                 &--description {
+                    margin-top: -10px;
                     font-size: $font-6;
                     color:$color-3-dark-blue;
+
+                    @media screen and (max-width:1200px) {
+                        font-size: $font-6;
+                    }
+                    @media screen and (max-width:992px) {
+                        font-size: $font-6;
+                    }
+                    @media screen and (max-width:768px) {
+                        font-size: $font-4;
+                    }
+                    @media screen and (max-width:576px) {
+                        font-size: $font-4;
+                    }
+                   
                 }
             }
 
             &_search {
                 
+                
                 &--input {
-                    width: 732px;
-                    height:48px;
+                    width: 600px;
+                    height: 48px;
 
-                    padding: $p-12px, $p-15px, $p-12px, $p-20px;
+                    @media screen and (max-width:1200px) {
+                        max-width: 450px;
+                    }
+                    @media screen and (max-width:992px) {
+                        max-width: 300px;
+                    }
+                    @media screen and (max-width:768px) {
+                        max-width: 250px;
+                    }
+                    @media screen and (max-width:576px) {
+                        max-width: 120px;
+                    }
+
+                    padding: $p-12px $p-15px;
                     border-radius: $p-5px;
                     border: 1px solid $color-5-light-grey;
 
@@ -143,7 +250,22 @@
                 @include flex();
 
                 &--list {
-                   margin:$m-1;
+                    margin: $m-1;
+
+                    @media screen and (max-width:1200px) {
+                        margin: $m-0-7;
+                    }
+                    @media screen and (max-width:992px) {
+                        margin: $m-0-5;
+                    }
+                    @media screen and (max-width:768px) {
+                        margin: $m-0-3;
+                    }
+                    @media screen and (max-width:576px) {
+                        margin: $m-0-3;
+                    }
+        
+
                 }
             }
         }
@@ -158,6 +280,27 @@
 
             font-size: $font-18;
             font-weight: $font-w-500;
+
+            @media screen and (max-width:1200px) {
+                max-width: 1080px;
+                font-size: $font-18;
+                font-weight: $font-w-500;
+            }
+            @media screen and (max-width:992px) {
+                max-width: 872px;
+                font-size: $font-14;
+                font-weight: $font-w-500;
+            }
+            @media screen and (max-width:768px) {
+                max-width: 648px;
+                font-size: $font-11;
+                font-weight: $font-w-500;
+            }
+            @media screen and (max-width:576px) {
+                max-width: 456px;
+                font-size: $font-8;
+                font-weight: $font-w-500;
+            }
 
             &_lists {
                 @include flex();
@@ -179,12 +322,51 @@
     }
 }
 
+@media screen and (max-width:1200px) {
+    .closed_menu {
+        display: none;
+    }
+}
+@media screen and (max-width:992px) {
+    .closed_menu {
+        display: none;
+    }
+}
+@media screen and (max-width:768px) {
+    .closed_menu {
+        display: none;
+    }
+}
+@media screen and (max-width:576px) {
+   
+}
+
+
+
 // marker place
 .point_icon {
-
+    margin: $m-0-5;
+    
     &:hover {
         @include transition();
         transform: translateY(-5px);
+    }
+
+    @media screen and (max-width:1200px) {
+        width: 60%;
+        margin: $m-0-5;
+    }
+    @media screen and (max-width:992px) {
+        width: 50%;
+        margin: $m-0-3;
+    }
+    @media screen and (max-width:768px) {
+        width: 40%;
+        margin: $m-0-2;
+    }
+    @media screen and (max-width:576px) {
+        width: 30%;
+        margin: $m-0-2;
     }
 }
 
@@ -194,6 +376,21 @@
     &__list {
 
         &_icon {
+            padding: 0px;
+            margin: 0px;
+
+            @media screen and (max-width:1200px) {
+               width: 90%; 
+            }
+            @media screen and (max-width:992px) {
+                width: 80%; 
+            }
+            @media screen and (max-width:768px) {
+                width: 70%; 
+            }
+            @media screen and (max-width:576px) {
+                width: 60%; 
+            }
 
             &:hover {
                 @include transition();
@@ -212,18 +409,27 @@
                  
 }
 
-//search icon lupa
-.search_icon {
-    margin-left: -30px;
-                                      
-}
-
 // functions icons
 .functions__lists {
-
+   
     &_list {
 
         &--icon {
+
+            @media screen and (max-width:1200px) {
+                width: 90%;
+            }
+            @media screen and (max-width:992px) {
+                width: 80%;
+            }
+            @media screen and (max-width:768px) {
+                width: 70%;
+            }
+            @media screen and (max-width:576px) {
+                width: 60%;
+            }
+
+
 
             &:hover {
                 @include transition();
@@ -233,15 +439,30 @@
     }
 }
 
+
+
 //Всплавающее меню
 
 /* Кнопка выпадающего списка */
 .dropbtn {
     background-color: $color-8-light-grey;
     color: $color-dark-grey;
-    font-size: 16px;
+    font-size: $font-16;
     border: none;
     cursor: pointer;
+
+    @media screen and (max-width:1200px) {
+        font-size: $font-14;
+    }
+    @media screen and (max-width:992px) {
+        font-size: $font-13;
+    }
+    @media screen and (max-width:768px) {
+        font-size: $font-12;
+    }
+    @media screen and (max-width:576px) {
+        font-size: $font-11;
+    }
 }
 
 /* Кнопка выпадающего меню при наведении и фокусировке */
@@ -260,7 +481,7 @@
     display: none;
     position: absolute;
     background-color: $color-8-light-grey;
-    min-width: 160px;
+    min-width: 120px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
 }

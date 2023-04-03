@@ -1,9 +1,36 @@
 .section {
     @include container();
 
+    @media screen and (max-width:1200px) {
+        @include container_1200();
+    }
+    @media screen and (max-width:992px) {
+        @include container_992();
+    }
+    @media screen and (max-width:768px) {
+        @include container_768();
+    }
+    @media screen and (max-width:576px) {
+        @include container_576();
+    }
+
     &__container {
        
         margin: 0 auto;
+        padding: 25px;
+
+        @media screen and (max-width:1200px) {
+            max-width: 1140px;
+        }
+        @media screen and (max-width:992px) {
+            max-width: 952px;
+        }
+        @media screen and (max-width:768px) {
+            max-width: 738px;
+        }
+        @media screen and (max-width:576px) {
+            max-width: 566px;
+        }
 
         &_top {
             @include flex();
@@ -17,6 +44,27 @@
                 font-size: $font-32;
                 margin:$m-1;
                 margin-bottom: $m-2;
+
+                @media screen and (max-width:1200px) {
+                    font-size: $font-26;
+                    margin:$m-1;
+                    margin-bottom: $m-1-5;
+                }
+                @media screen and (max-width:992px) {
+                    font-size: $font-24;
+                    margin:$m-0-7;
+                    margin-bottom: $m-1;
+                }
+                @media screen and (max-width:768px) {
+                    font-size: $font-20;
+                    margin:$m-0-5;
+                    margin-bottom: $m-0-7;
+                }
+                @media screen and (max-width:576px) {
+                    font-size: $font-16;
+                    margin:$m-0-3;
+                    margin-bottom: $m-0-5;
+                }
                 
                 & a:hover {
                     color: $color-middle-blue;
@@ -64,81 +112,30 @@
            max-width: 1280px;
            margin: $m-2;
            margin: 0 auto;
-          
+
+            @media screen and (max-width:1200px) {
+                max-width: 1140px;
+            }
+            @media screen and (max-width:992px) {
+                max-width: 952px;
+            }
+            @media screen and (max-width:768px) {
+                max-width: 738px;
+            }
+            @media screen and (max-width:576px) {
+                max-width: 566px;
+            }
         }
-
     }
-
-    
 }
 
-
-
-.section1 {
-    height: 460px;
-    background-color: $color-8-light-grey;
-}
-
-.section2 {
-    height: 540px;
-    background-color: $color-white;
-}
-
-.section3 {
-    height: 628px;
-    background-color: $color-8-light-grey;
-
-}
-
-.section4 {
-    height:286px;
-    background-color: $color-white;
-    
-}
-
-.section5 {
-    height:624px;
-    background-color: $color-8-light-grey;
-}
-
-.section6 {
-    height:218px;
-    background-color: $color-white;
-    
-}
-
-.section8 {
-    height:540px;
-    background-color: $color-white;
-}
-
-.section7 {
-    height:1201px;
-    background-color: $color-8-light-grey;
-
-}
-
-.section9 {
-    height:100px;
-    background-color: $color-2-light-grey;
-}
-
-.section10 {
-    height:980px;
-    background-color: $color-2-light-grey;
-}
-
-.section11 {
-    height: 1350px;
-    background-color: $color-2-light-grey;
-}
-.section12 {
-    height: 1050px;
-    background-color: $color-2-light-grey;
-}
 
 .bg_grey {
     background-color: $color-8-light-grey;
+}
+
+.bg_counters {
+    background-color: $color-light-grey;
 }
 
 .bg_white {
@@ -147,5 +144,25 @@
 
 .border {
     border: 1px solid $color-8-light-grey;
+}
+
+.title_img img {
+    width: 124px;
+    vertical-align: baseline;
+
+    @media screen and (max-width:1200px) {
+        width: 114px;
+        
+    }
+    @media screen and (max-width:992px) {
+        width: 104px;
+    }
+    @media screen and (max-width:768px) {
+        width: 94px;
+    }
+    @media screen and (max-width:576px) {
+        width: 84px;
+    }
+
 }
 
