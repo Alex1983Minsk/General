@@ -206,10 +206,10 @@
                 margin-left: $m-1;
             }
             @media screen and (max-width:576px) {
-                height: 48px;
-                width: 48px;
+                height: 40px;
+                width: 40px;
                 border-radius: 5px;
-                margin-left: $m-0-5;
+                margin-left: $m-0-3;
             }
            
         }
@@ -231,7 +231,7 @@
             }
 
             &--list {
-                padding:$p-0-5;
+                padding:$p-0-3;
 
                 & a:hover {
                     @include transition();

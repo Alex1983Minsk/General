@@ -43,6 +43,10 @@
 
             &_region {
                 @include flex();
+
+                @media screen and (max-width:576px) {
+                   display: none;
+                }
                
                 &--list {
                     
@@ -81,6 +85,10 @@
 
             &_contacts {
                 @include flex();
+
+                @media screen and (max-width:576px) {
+                    display:none;
+                }
                
                 &--list {
                     margin: $m-0-3;
@@ -124,6 +132,14 @@
 
             &_user {
                 @include flex();
+
+                @media screen and (max-width:576px) {
+                    & img {
+                        display: none;
+                    }
+                }
+
+               
                 
                 &--list {
                     margin: $m-0-3;
@@ -173,6 +189,10 @@
 
             &_logo {
                 width: 26%;
+
+                @media screen and (max-width:576px) {
+                    width: 100%;
+                }
                
                 &--img {
                     float: left;
@@ -235,7 +255,7 @@
                         max-width: 250px;
                     }
                     @media screen and (max-width:576px) {
-                        max-width: 120px;
+                        display: none;
                     }
 
                     padding: $p-12px $p-15px;
@@ -248,6 +268,10 @@
 
             &_function {
                 @include flex();
+
+                @media screen and (max-width:576px) {
+                    display: none;
+                 }
 
                 &--list {
                     margin: $m-1;
@@ -274,6 +298,10 @@
         height:50px;
         border: 2px solid $color-5-light-grey;
 
+        @media screen and (max-width:576px) {
+            display: none;
+        }
+
         &__block {
             max-width: 1280px;
             margin: 0 auto;
@@ -292,13 +320,13 @@
                 font-weight: $font-w-500;
             }
             @media screen and (max-width:768px) {
-                max-width: 648px;
+                max-width: 748px;
                 font-size: $font-11;
                 font-weight: $font-w-500;
             }
             @media screen and (max-width:576px) {
-                max-width: 456px;
-                font-size: $font-8;
+                max-width: 556px;
+                font-size: $font-9;
                 font-weight: $font-w-500;
             }
 

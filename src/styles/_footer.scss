@@ -21,13 +21,12 @@
 
         max-width: 1280px;
         margin: 0 auto;
-        
-        height: 460px;
 
+        height: 460px;
+        
         font-size: $font-16;
 
         @media screen and (max-width:1200px) {
-            @include flex();
             max-width: 1140px;
             font-size: $font-14;
         }
@@ -42,13 +41,18 @@
         @media screen and (max-width:576px) {
             max-width: 566px;
             font-size: $font-10;
-           flex: none;
+          
         }
 
 
         &__column1 {
-            height:80%;
+            height: 80%;
 
+            @media screen and (max-width:576px) {
+                width: 100%;
+              
+            }
+            
             &_lists {
                 
                 &--list {
@@ -60,8 +64,13 @@
         }
 
         &__column2 {
-            height:80%;
+            height: 80%;
 
+            @media screen and (max-width:576px) {
+                display: none;
+              
+            }
+            
             &_lists {
 
                 &--list {
@@ -74,10 +83,15 @@
                 }
             }
         }
-        
-        &__column3 {
-            height:80%;
 
+        &__column3 {
+            height: 80%;
+
+            @media screen and (max-width:576px) {
+                display: none;
+              
+            }
+            
             &_lists {
                 
                 &--list {
@@ -92,8 +106,13 @@
         }
 
         &__column4 {
-            height:80%;
+            height: 80%;
 
+            @media screen and (max-width:576px) {
+                display: none;
+              
+            }
+            
             &_lists {
                
                 &--list {
@@ -110,8 +129,11 @@
 
     &-rights {
         background-color: $color-7-light-grey;
-
         height: 60px;
+
+        @media screen and (max-width:576px) {
+            display: none;
+        }
 
         &__block {
             @include flex();
@@ -143,6 +165,7 @@
                 max-width: 566px;
                 padding:$p-0-5;
                 font-size: $font-10;
+                flex: none;
             }
 
             &_politics {
@@ -371,8 +394,6 @@
     padding: 10px;
     margin:$m-1;
 
-    width:100%;
-
     &_title {
         margin:$m-0-5;
         text-align:center;
@@ -408,7 +429,7 @@
         padding: 5px;
         margin: $m-0-3;
 
-        width: 75%;
+        width: 50%;
     }
 
     &_title {
@@ -524,8 +545,7 @@
             height: 28px;
         }
         @media screen and (max-width:576px) {
-            width: 26px;
-            height: 26px;
+           display: none;
         }
 
         &_img {
@@ -553,6 +573,8 @@
         }
     }
 }
+
+
 
 
 
